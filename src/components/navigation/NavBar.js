@@ -10,7 +10,7 @@ const NavBar = () => {
             <NavDropdown variant={'dropdown--bold'} text={"Our services"} />
             <Logo className={styles['nav__logo']} />
             <NavDropdown text={"More info"} />
-            <ContactButton className={styles['nav__contact-button']} text={"See our services"} />
+            <ContactButton className={styles['nav__contact-button']} text={"Get in touch"} />
         </nav>
     )
 }
