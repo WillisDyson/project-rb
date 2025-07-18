@@ -1,0 +1,8 @@
+{
+  "short_name": "Project RB",
+  "name": "Project RB",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
