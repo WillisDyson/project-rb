@@ -1,7 +1,9 @@
-@import "./GlobalFonts.scss";
+@import "GlobalFonts.scss";
+@import "GlobalColourVars.scss";
 
 body {
-    color: #1D3036;
-    font-family: "Quasimoda", sans-serif;
+    color: $midnight-black;
+    font-family: "houschka-pro", sans-serif;
     font-weight: 400;
+    margin: 0;
 }

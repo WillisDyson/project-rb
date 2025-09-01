@@ -1,7 +1,6 @@
 .dropdown {
     align-items: center;
     display: flex;
-    font-size: 1.25rem;
     font-weight: 400;
 
     &__text {
@@ -14,11 +13,11 @@
         background-size: cover;
         content: '';
         display: block;
-        height: 9px;
+        height: 7.75px;
         margin-left: 8px;
         position: relative;
         top: 1.25px;
-        width: 14px;
+        width: 12.77px;
     }
 
     &--bold {

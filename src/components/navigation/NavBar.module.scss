@@ -1,15 +1,19 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
 .nav {
     align-items: center;
-    background-color: transparent;
+    color: $midnight-black;
+    background-color: $white;
     display: flex;
-    padding: 30px 50px;
+    font-size: 1.125rem;
+    padding: 26px 33px;
 
-    &__logo {
+    img {
         display: block;
-        margin: 0 auto;
+        margin-right: auto;
     }
 
-    &__contact-button {
-        margin-left: 40px;
+    a {
+        margin-left: 67px;
     }
 }

@@ -1,0 +1,18 @@
+.link {
+    align-items: center;
+    display: flex;
+    font-weight: 400;
+
+    &__text {
+        position: relative;
+        bottom: 1.25px;
+    }
+
+    &--bold {
+        font-weight: 700;
+
+        &::after {
+            background-image: url('~assets/dropdown/arrow-down-bold.svg');
+        }
+    }
+}

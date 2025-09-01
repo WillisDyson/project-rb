@@ -1,0 +1,23 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
+.button {
+    background-color: $crimson-red;
+    border-radius: 999px;
+    color: $white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 2.5px 16px 2.5px;
+    text-decoration: none;
+
+    &--outline {
+        background-color: $white;
+        color: $crimson-red;
+        outline: 2px solid $crimson-red;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $crimson-red;
+            color: $white;
+        }
+    }
+}
