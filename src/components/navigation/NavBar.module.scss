@@ -1,19 +1,20 @@
 @import "global-stylesheets/GlobalColourVars.scss";
 
 .nav {
-    align-items: center;
+    align-items: flex-start;
     color: $midnight-black;
-    background-color: $white;
+    background-color: $off-white;
     display: flex;
     font-size: 1.125rem;
+    justify-content: flex-end;
     padding: 26px 33px;
 
-    img {
-        display: block;
-        margin-right: auto;
-    }
-
     a {
-        margin-left: 67px;
+        margin-left: 59px;
+
+        &:first-child {
+            margin-left: 0;
+            margin-right: auto;
+        }
     }
 }

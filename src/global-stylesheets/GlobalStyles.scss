@@ -3,7 +3,18 @@
 
 body {
     color: $midnight-black;
-    font-family: "houschka-pro", sans-serif;
+    font-family: "houschka-pro", Arial, sans-serif;
     font-weight: 400;
     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "freight-text-pro", "houschka-pro", Arial, serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+em {
+    color: $crimson-red;
+    font-style: italic;
 }

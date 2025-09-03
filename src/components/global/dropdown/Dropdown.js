@@ -1,6 +1,6 @@
-import styles from "./NavDropdown.module.scss";
+import styles from "./Dropdown.module.scss";
 
-const NavDropdown = ({ className, variant, text }) => {
+const Dropdown = ({ className, variant, text }) => {
   return (
     <div
       className={`${className ? className : ""}${styles.dropdown} ${
@@ -19,4 +19,4 @@ const NavDropdown = ({ className, variant, text }) => {
   );
 };
 
-export default NavDropdown;
+export default Dropdown;

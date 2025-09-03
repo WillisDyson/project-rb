@@ -1,0 +1,11 @@
+@import 'global-stylesheets/GlobalColourVars';
+
+.heroimage {
+    background-color: $off-white;
+
+    &__content {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1242px;
+    }
+}

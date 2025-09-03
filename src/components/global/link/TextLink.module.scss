@@ -1,7 +1,17 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
 .link {
     align-items: center;
-    display: flex;
+    color: $midnight-black;
     font-weight: 400;
+    padding: 2px 4px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        color: $crimson-red;
+        cursor: pointer;
+    }
 
     &__text {
         position: relative;

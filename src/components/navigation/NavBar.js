@@ -1,18 +1,21 @@
+import { useLocation } from "react-router-dom";
 import styles from "./NavBar.module.scss";
-import NavDropdown from "./nav-dropdown/NavDropdown";
-import NavLink from "./nav-link/NavLink";
+import Dropdown from "../global/dropdown/Dropdown";
+import TextLink from "../global/link/TextLink";
 import Button from "../global/contact-button/Button";
-import Logo from "../global/logo/Logo";
+import NavLogo from "./nav-logo/NavLogo";
 
 const NavBar = () => {
+  const location = useLocation();
+
   return (
     <nav className={styles.nav}>
-      <Logo className={styles["nav__logo"]} />
-      <NavDropdown text={"All services"} />
-      <NavLink text={"About us"} />
-      <NavLink text={"Case studies"} />
-      <NavLink text={"Blog"} />
-      <Button variant={"button--outline"} text={"Get in touch"} />
+      {location.pathname !== "/" && <NavLogo href="/" />}
+      <Dropdown text={"All services"} />
+      <TextLink text={"About us"} href="/about" />
+      <TextLink text={"Case studies"} href="/case-studies" />
+      <TextLink text={"Blog"} href="/blog" />
+      <Button variant={"button--nav"} text={"Get in touch"} href="/contact" />
     </nav>
   );
 };

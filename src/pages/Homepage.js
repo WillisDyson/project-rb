@@ -1,8 +1,16 @@
-const Homepage = () => {
+import HeroHeader from "components/hero-header/HeroHeader";
 
-    return (
-        <h1>Homepage</h1>
-    );
-}
+const Homepage = () => {
+  return (
+    <HeroHeader
+      headerText={
+        <>
+          We make web accessibility simple, so your services work for
+          <em> everyone</em>.
+        </>
+      }
+    />
+  );
+};
 
 export default Homepage;
