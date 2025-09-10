@@ -1,0 +1,21 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
+.dropdownitem {
+    list-style-type: none;
+
+    a {
+        align-items: center;
+        color: $midnight-black;
+        display: flex;
+        padding: 10px 20px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+            background-color: $off-white;
+            color: $crimson-red;
+            outline: none
+        }
+    }
+
+}

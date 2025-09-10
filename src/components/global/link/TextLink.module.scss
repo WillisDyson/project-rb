@@ -6,7 +6,6 @@
     font-weight: 400;
     padding: 2px 4px;
     text-decoration: none;
-    transition: 0.3s;
 
     &:hover {
         color: $crimson-red;
@@ -16,6 +15,18 @@
     &__text {
         position: relative;
         bottom: 1.25px;
+    }
+
+    &--hero {
+        border-bottom: 1px solid $crimson-red;
+        color: $crimson-red;
+        font-size: 1.25rem;
+        padding: 0;
+
+        &:hover {
+            border-color: $midnight-black;
+            color: $midnight-black;
+        }
     }
 
     &--bold {

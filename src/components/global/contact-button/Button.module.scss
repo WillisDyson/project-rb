@@ -7,7 +7,7 @@
     font-size: 1.125rem;
     font-weight: 700;
     outline: 2px solid $garnet-red;
-    padding: 2.5px 16px 2.5px;
+    padding: 3.5px 16px 3.5px;
     text-decoration: none;
     transition: 0.3s;
 
@@ -16,17 +16,18 @@
         color: $crimson-red;
         outline-color: $crimson-red;
 
-        &:hover {
+        &:hover, &:focus-visible {
             background-color: $crimson-red;
             color: $white;
+            outline-color: $garnet-red;
         }
     }
 
     &--hero {
         font-size: 1.25rem;
-        padding: 2.5px 42px;
+        padding: 3.5px 42px;
 
-        &:hover {
+        &:hover, &:focus-visible {
                 background-color: $white;
                 color: $crimson-red;
                 outline-color: $crimson-red;

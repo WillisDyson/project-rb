@@ -13,13 +13,19 @@ const HeroHeader = ({ className, variant, headerText }) => {
       }`}
     >
       <div className={`${styles.hero__content}`}>
-        <div>
+        <div className={`${styles.hero__text}`}>
           <Logo variant={"logo--hero"} />
           <H1Text>{headerText}</H1Text>
           <Button variant={"button--hero"} text={"Get in touch"} />
-          <TextLink href={"#services"} text={"See our services"} />
+          <TextLink
+            href={"#services"}
+            text={"See our services"}
+            variant={"link--hero"}
+          />
         </div>
-        <HeroImage />
+        <div className={`${styles.hero__imagewrap}`}>
+          <HeroImage />
+        </div>
       </div>
     </div>
   );

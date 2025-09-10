@@ -1,23 +1,45 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
 .dropdown {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
+    flex-direction: column;
     font-weight: 400;
+    padding: 2px 4px;
 
     &__text {
-        position: relative;
+        align-items: center;
         bottom: 1.25px;
+        display: flex;
+        position: relative;
+
+        &::after {
+            background-image: url('~assets/dropdown/arrow-down.svg');
+            background-size: cover;
+            content: '';
+            display: block;
+            height: 7.75px;
+            margin-left: 8px;
+            position: relative;
+            transition: 0.3s;
+            top: 1.25px;
+            width: 12.77px;
+        }
     }
 
-    &::after {
-        background-image: url('~assets/dropdown/arrow-down.svg');
-        background-size: cover;
-        content: '';
-        display: block;
-        height: 7.75px;
-        margin-left: 8px;
-        position: relative;
-        top: 1.25px;
-        width: 12.77px;
+    &__menu-outer {
+        display: none;
+        min-width: 113px;
+        position: absolute;
+        top: 40px;
+    }
+
+    &__menu {
+        background-color: $white;
+        border: 1px solid $stone-grey;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 0;
     }
 
     &--bold {
@@ -25,6 +47,25 @@
 
         &::after {
             background-image: url('~assets/dropdown/arrow-down-bold.svg');
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus-within, &:hover {
+        color: $crimson-red;
+
+        .dropdown__text {
+            
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+
+        .dropdown__menu-outer {
+            display: block;
         }
     }
 }
