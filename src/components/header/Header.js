@@ -4,14 +4,14 @@ import styles from "./Header.module.scss";
 
 const Header = ({ className, variant, headerText, descText }) => {
   return (
-    <div
+    <header
       className={`${className ? className : ""}${
         styles.header ? styles.header : ""
       }${variant ? styles[variant] : ""}`}
     >
       <H1Text variant={"h1--subpage"}>{headerText}</H1Text>
       <DescText>{descText}</DescText>
-    </div>
+    </header>
   );
 };
 

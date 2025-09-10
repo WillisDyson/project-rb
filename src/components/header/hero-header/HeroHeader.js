@@ -7,7 +7,7 @@ import HeroImage from "./hero-image/HeroImage";
 
 const HeroHeader = ({ className, variant, headerText }) => {
   return (
-    <section
+    <header
       className={`${className ? className : ""}${styles.hero} ${
         variant ? styles[variant] : ""
       }`}
@@ -27,7 +27,7 @@ const HeroHeader = ({ className, variant, headerText }) => {
           <HeroImage />
         </div>
       </div>
-    </section>
+    </header>
   );
 };
 
