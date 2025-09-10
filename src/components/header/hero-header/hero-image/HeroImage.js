@@ -1,11 +1,11 @@
 import styles from "./HeroImage.module.scss";
 import HeroImageSrc from "assets/hero-header/hero-image.png";
 
-const HeroImage = ({ className, variant }) => {
+const HeroImage = ({ className, variant, alt }) => {
   return (
     <img
       src={HeroImageSrc}
-      alt=""
+      alt={alt}
       className={`${className ? className : ""}${styles.heroimage} ${
         variant ? styles[variant] : ""
       }`}
