@@ -1,13 +1,13 @@
 import styles from "./HeroHeader.module.scss";
 import Logo from "components/global/logo/Logo";
-import Button from "../global/contact-button/Button";
-import H1Text from "components/global/h1-text/H1Text";
+import Button from "components/global/button/Button";
+import H1Text from "components/header/h1-text/H1Text";
 import TextLink from "components/global/link/TextLink";
 import HeroImage from "./hero-image/HeroImage";
 
 const HeroHeader = ({ className, variant, headerText }) => {
   return (
-    <div
+    <section
       className={`${className ? className : ""}${styles.hero} ${
         variant ? styles[variant] : ""
       }`}
@@ -27,7 +27,7 @@ const HeroHeader = ({ className, variant, headerText }) => {
           <HeroImage />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

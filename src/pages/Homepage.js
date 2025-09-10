@@ -1,4 +1,4 @@
-import HeroHeader from "components/hero-header/HeroHeader";
+import HeroHeader from "components/header/hero-header/HeroHeader";
 
 const Homepage = () => {
   return (

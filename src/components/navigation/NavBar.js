@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 import Dropdown from "../global/dropdown/Dropdown";
 import TextLink from "../global/link/TextLink";
-import Button from "../global/contact-button/Button";
+import Button from "../global/button/Button";
 import NavLogo from "./nav-logo/NavLogo";
 
 const NavBar = () => {

@@ -1,3 +1,19 @@
+@import 'global-stylesheets/GlobalColourVars';
+
 .header {
-    color: inherit;
+    background-color: $off-white;
+    padding: 30px 25px 0;
+
+    h1 {
+        margin-bottom: 25px;
+
+        &::before {
+            background-color: $crimson-red;
+            content: "";
+            display: block;
+            height: 5px;
+            margin: 0 auto 25px;
+            width: 37px;
+        }
+    }
 }
