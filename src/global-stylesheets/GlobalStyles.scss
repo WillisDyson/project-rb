@@ -3,13 +3,13 @@
 
 body {
     color: $midnight-black;
-    font-family: "houschka-pro", Arial, sans-serif;
+    font-family: $houschka;
     font-weight: 400;
     margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "freight-text-pro", "houschka-pro", Arial, serif;
+    font-family: $freight;
     font-weight: 700;
     margin: 0;
 }
