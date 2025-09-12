@@ -26,7 +26,7 @@ const HeroHeader = ({ className, variant, headerText }) => {
         <div className={`${styles.hero__imagewrap}`}>
           <HeroImage
             alt={
-              "Greyscale image of a woman smiling, looking down at a bright red smartphone that she is holding."
+              "Greyscale woman smiling, looking down at a bright red smartphone that she is holding."
             }
           />
         </div>

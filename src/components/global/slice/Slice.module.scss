@@ -1,0 +1,29 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
+.slice {
+    background-color: $white;
+    padding: 100px 25px;
+    
+    &--alt {
+        background-color: $off-white;
+    }
+    
+    &__inner {
+        margin: 0 auto;
+        max-width: 1268px;
+    }
+    
+    h2 {
+        align-items: center;
+        display: flex;
+
+        &::before {
+            background-color: $crimson-red;
+            content: "";
+            display: inline-block;
+            height: 37px;
+            margin-right: 26px;
+            width: 5px;
+        }
+    }
+}

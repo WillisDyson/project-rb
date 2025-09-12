@@ -1,5 +1,5 @@
 import styles from "./Logo.module.scss";
-import logoImage from "assets/global/logo-placeholder.png";
+import logoImage from "assets/global/rb-logo.svg";
 
 const Logo = ({ className, variant }) => {
   return (

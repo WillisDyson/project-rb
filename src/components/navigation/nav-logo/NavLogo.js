@@ -1,5 +1,5 @@
 import styles from "./NavLogo.module.scss";
-import logoImage from "assets/global/logo-placeholder.png";
+import logoImage from "assets/global/rb-logo.svg";
 import { Link } from "react-router-dom";
 
 const NavLogo = ({ className, variant, href }) => {

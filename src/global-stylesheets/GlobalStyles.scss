@@ -10,8 +10,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $freight;
-    font-weight: 700;
     margin: 0;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 800;
 }
 
 em {
