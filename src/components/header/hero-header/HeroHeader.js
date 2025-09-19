@@ -1,7 +1,6 @@
 import styles from "./HeroHeader.module.scss";
 import Logo from "components/global/logo/Logo";
 import Button from "components/global/button/Button";
-import H1Text from "components/header/h1-text/H1Text";
 import TextLink from "components/global/link/TextLink";
 import HeroImage from "./hero-image/HeroImage";
 
@@ -15,7 +14,7 @@ const HeroHeader = ({ className, variant, headerText }) => {
       <div className={`${styles.hero__content}`}>
         <div className={`${styles.hero__text}`}>
           <Logo variant={"logo--hero"} />
-          <H1Text>{headerText}</H1Text>
+          <h1>{headerText}</h1>
           <Button variant={"button--hero"} text={"Get in touch"} />
           <TextLink
             href={"#services"}

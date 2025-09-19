@@ -1,0 +1,8 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
+.tiles-grid {
+    display: flex;
+    gap: 53px;
+    justify-content: space-between;
+    margin-top: 55px;
+}

@@ -1,0 +1,15 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+
+.tile {
+    background-color: $ash-grey;
+    border: 2px solid $stone-grey;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px 24px;
+    width: 100%;
+
+    h3 {
+        margin-bottom: 16px;
+    }
+}

@@ -1,7 +1,6 @@
-import H2Text from "components/header/h2-text/H2Text";
 import styles from "./Slice.module.scss";
 
-const Slice = ({ className, headerText, variant }) => {
+const Slice = ({ className, headerText, variant, children }) => {
   return (
     <section
       className={`${styles["slice"]} ${className ? className : ""} ${
@@ -9,7 +8,8 @@ const Slice = ({ className, headerText, variant }) => {
       }`}
     >
       <div className={styles["slice__inner"]}>
-        <H2Text>{headerText}</H2Text>
+        <h2>{headerText}</h2>
+        {children}
       </div>
     </section>
   );

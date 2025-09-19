@@ -1,5 +1,3 @@
-import H1Text from "components/header/h1-text/H1Text";
-import DescText from "./desc-text/DescText";
 import styles from "./Header.module.scss";
 
 const Header = ({ className, variant, headerText, descText }) => {
@@ -9,8 +7,8 @@ const Header = ({ className, variant, headerText, descText }) => {
         styles.header ? styles.header : ""
       }${variant ? styles[variant] : ""}`}
     >
-      <H1Text variant={"h1--subpage"}>{headerText}</H1Text>
-      <DescText>{descText}</DescText>
+      <h1>{headerText}</h1>
+      <p>{descText}</p>
     </header>
   );
 };
