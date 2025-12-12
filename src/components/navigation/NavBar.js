@@ -3,14 +3,14 @@ import styles from "./NavBar.module.scss";
 import Dropdown from "../global/dropdown/Dropdown";
 import TextLink from "../global/link/TextLink";
 import Button from "../global/button/Button";
-import NavLogo from "./nav-logo/NavLogo";
+import Logo from "../global/logo/Logo";
 
 const NavBar = () => {
   const location = useLocation();
 
   return (
     <nav className={styles.nav}>
-      {location.pathname !== "/" && <NavLogo href="/" />}
+      {location.pathname !== "/" && <Logo href="/" />}
       <Dropdown text={"All services"} />
       <TextLink text={"About us"} href="/about" />
       <TextLink text={"Case studies"} href="/case-studies" />

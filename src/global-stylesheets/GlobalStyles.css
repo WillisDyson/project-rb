@@ -1,0 +1,36 @@
+@import url("https://use.typekit.net/zed7vck.css");
+@import url("https://use.typekit.net/zed7vck.css");
+* {
+  margin: 0;
+}
+
+body {
+  color: #1D3035;
+  font-family: "houschka-pro", Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "quasimoda", "houschka-pro", Arial, serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.125rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+em {
+  font-style: normal;
+  font-weight: 900;
+}/*# sourceMappingURL=GlobalStyles.css.map */

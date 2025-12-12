@@ -12,26 +12,26 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $freight;
+    font-family: $quasimoda;
     margin: 0;
 }
 
 h1 {
     font-size: 2.75rem;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 2.125rem;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 h3 {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 em {
-    color: $crimson-red;
-    font-style: italic;
+    font-style: normal;
+    font-weight: 900;
 }
