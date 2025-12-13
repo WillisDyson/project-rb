@@ -1,11 +1,12 @@
 @import "global-stylesheets/GlobalColourVars.scss";
+@import "global-stylesheets/GlobalFunctions.scss";
 
 .nav {
     align-items: flex-start;
-    color: $midnight-black;
-    background-color: $off-white;
+    color: $white;
+    background-color: transparent;
     display: flex;
-    font-size: 1.125rem;
+    font-size: px-to-rem(18px);
     justify-content: flex-end;
     padding: 26px 33px;
 

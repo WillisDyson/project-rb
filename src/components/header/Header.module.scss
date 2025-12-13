@@ -1,7 +1,8 @@
 @import 'global-stylesheets/GlobalColourVars';
+@import 'global-stylesheets/GlobalFunctions.scss';
 
 .header {
-    background-color: $off-white;
+    background-color: transparent;
     padding: 30px 25px 80px;
 
     h1 {
@@ -20,7 +21,7 @@
     }
 
     p {
-        font-size: 1rem;
+        font-size: px-to-rem(16px);
         margin-top: 25px;
         text-align: center;
     }

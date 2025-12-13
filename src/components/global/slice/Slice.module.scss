@@ -1,11 +1,11 @@
 @import "global-stylesheets/GlobalColourVars.scss";
 
 .slice {
-    background-color: $white;
+    background-color: transparent;
     padding: 100px 25px;
     
     &--alt {
-        background-color: $off-white;
+        background-color: $transparent-white;
     }
     
     &__inner {
@@ -18,12 +18,15 @@
         display: flex;
 
         &::before {
-            background-color: $crimson-red;
+            background-color: $salmon-red;
+            border-radius: 2px;
             content: "";
             display: inline-block;
-            height: 37px;
+            height: 36px;
             margin-right: 26px;
-            width: 5px;
+            position: relative;
+            top: 2px;
+            width: 8px;
         }
     }
 }

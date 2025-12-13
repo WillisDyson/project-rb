@@ -1,0 +1,45 @@
+@import "global-stylesheets/GlobalColourVars.scss";
+@import "global-stylesheets/GlobalFunctions.scss";
+@import "global-stylesheets/GlobalFonts.scss";
+
+.button {
+    background: transparent;
+    border-radius: 999px;
+    color: $white;
+    font-family: $houschka;
+    font-size: px-to-rem(20px);
+    font-weight: 700;
+    overflow: hidden;
+    padding: 9px 24px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &::before {
+        background: $magic-gradient;
+        border-radius: 25px;
+        content: "";
+        display: block;
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: -1;
+    }
+
+    &::after {
+        background-color: $midnight-blue;
+        border-radius: 25px;
+        content: "";
+        display: block;
+        height: calc(100% - 6px);
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 6px);
+        z-index: -1;
+    }
+}

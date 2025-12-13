@@ -1,8 +1,9 @@
 @import "global-stylesheets/GlobalColourVars.scss";
+@import "global-stylesheets/GlobalFunctions.scss";
 
 .link {
     align-items: center;
-    color: $midnight-black;
+    color: $white;
     font-weight: 400;
     padding: 2px 4px;
     text-decoration: none;
@@ -20,7 +21,7 @@
     &--hero {
         border-bottom: 1px solid $crimson-red;
         color: $crimson-red;
-        font-size: 1.25rem;
+        font-size: px-to-rem(20px);
         padding: 0;
 
         &:hover {

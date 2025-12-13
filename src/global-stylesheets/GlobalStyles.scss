@@ -1,12 +1,15 @@
 @import "GlobalFonts.scss";
 @import "GlobalColourVars.scss";
+@import "GlobalFunctions.scss";
 
 * {
     margin: 0;
 }
 
 body {
-    color: $midnight-black;
+    background: $orbit-black;
+    background: $space-gradient;
+    color: $white;
     font-family: $houschka;
     font-weight: 400;
 }
@@ -17,17 +20,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.75rem;
+    font-size: px-to-rem(44px);
     font-weight: 400;
 }
 
 h2 {
-    font-size: 2.125rem;
+    font-size: px-to-rem(34px);
     font-weight: 900;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: px-to-rem(24px);
     font-weight: 900;
 }
 

@@ -1,4 +1,4 @@
-import styles from "./Button.module.scss";
+import styles from "./ButtonLink.module.scss";
 import { Link } from "react-router-dom";
 
 const Button = ({ className, text, variant }) => {
