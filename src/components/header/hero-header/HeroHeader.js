@@ -1,7 +1,7 @@
 import styles from "./HeroHeader.module.scss";
 import Logo from "components/global/logo/Logo";
 import ButtonLink from "components/global/button-link/ButtonLink";
-import TextLink from "components/global/link/TextLink";
+import TextLink from "components/global/text-link/TextLink";
 
 const HeroHeader = ({ className, variant, headerText }) => {
   return (

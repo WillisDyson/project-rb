@@ -1,7 +1,7 @@
 @use 'global-stylesheets/GlobalColourVars.scss';
 
 .heroimage {
-    background-color: GlobalColourVars.$off-white;
+    background-color: $off-white;
 
     &__content {
         display: flex;

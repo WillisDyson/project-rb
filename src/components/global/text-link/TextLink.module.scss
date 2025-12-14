@@ -1,15 +1,15 @@
-@use "global-stylesheets/GlobalColourVars.scss";
-@use "global-stylesheets/GlobalFunctions.scss";
+@use "global-stylesheets/GlobalColourVars.scss" as *;;
+@use "global-stylesheets/GlobalFunctions.scss" as *;
 
 .link {
     align-items: center;
-    color: GlobalColourVars.$white;
+    color: $white;
     font-weight: 400;
     padding: 2px 4px;
     text-decoration: none;
 
     &:hover {
-        color: GlobalColourVars.$crimson-red;
+        color: $crimson-red;
         cursor: pointer;
     }
 
@@ -19,14 +19,14 @@
     }
 
     &--hero {
-        border-bottom: 1px solid GlobalColourVars.$crimson-red;
-        color: GlobalColourVars.$crimson-red;
+        border-bottom: 1px solid $crimson-red;
+        color: $crimson-red;
         font-size: px-to-rem(20px);
         padding: 0;
 
         &:hover {
-            border-color: GlobalColourVars.$midnight-black;
-            color: GlobalColourVars.$midnight-black;
+            border-color: $midnight-black;
+            color: $midnight-black;
         }
     }
 

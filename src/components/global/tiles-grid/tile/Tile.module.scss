@@ -1,8 +1,8 @@
-@use "global-stylesheets/GlobalColourVars.scss";
+@use "global-stylesheets/GlobalColourVars.scss" as *;;
 
 .tile {
-    background-color: GlobalColourVars.$ash-grey;
-    border: 2px solid GlobalColourVars.$stone-grey;
+    background-color: $ash-grey;
+    border: 2px solid $stone-grey;
     border-radius: 8px;
     display: flex;
     flex-direction: column;

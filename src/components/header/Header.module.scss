@@ -1,5 +1,5 @@
-@use 'global-stylesheets/GlobalColourVars.scss';
-@use 'global-stylesheets/GlobalFunctions.scss';
+@use 'global-stylesheets/GlobalColourVars.scss' as *;
+@use 'global-stylesheets/GlobalFunctions.scss' as *;
 
 .header {
     background-color: transparent;
@@ -11,7 +11,7 @@
         text-align: center;
 
         &::before {
-            background-color: GlobalColourVars.$crimson-red;
+            background-color: $crimson-red;
             content: "";
             display: block;
             height: 5px;

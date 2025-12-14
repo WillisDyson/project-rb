@@ -1,19 +1,19 @@
-@use "global-stylesheets/GlobalColourVars.scss";
+@use "global-stylesheets/GlobalColourVars.scss" as *;;
 
 .dropdownitem {
     list-style-type: none;
 
     a {
         align-items: center;
-        color: GlobalColourVars.$midnight-black;
+        color: $midnight-black;
         display: flex;
         padding: 10px 20px;
         text-decoration: none;
 
         &:hover,
         &:focus-visible {
-            background-color: GlobalColourVars.$off-white;
-            color: GlobalColourVars.$crimson-red;
+            background-color: $off-white;
+            color: $crimson-red;
             outline: none
         }
     }

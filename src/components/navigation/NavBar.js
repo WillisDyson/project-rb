@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 import Dropdown from "../global/dropdown/Dropdown";
-import TextLink from "../global/link/TextLink";
+import TextLink from "../global/text-link/TextLink";
 import ButtonLink from "../global/button-link/ButtonLink";
 import Logo from "../global/logo/Logo";
 

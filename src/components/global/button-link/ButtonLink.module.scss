@@ -1,7 +1,7 @@
-@use "global-stylesheets/GlobalColourVars.scss";
-@use "global-stylesheets/GlobalFunctions.scss";
-@use "global-stylesheets/GlobalFonts.scss";
-@use "global-stylesheets/GlobalAnimations.scss";
+@use "global-stylesheets/GlobalColourVars.scss" as *;;
+@use "global-stylesheets/GlobalFunctions.scss" as *;
+@use "global-stylesheets/GlobalFonts.scss" as *;
+@use "global-stylesheets/GlobalAnimations.scss" as *;
 
 $button-outline-thickness: 9px;
 
@@ -9,8 +9,8 @@ $button-outline-thickness: 9px;
     background: transparent;
     border-radius: 999px;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.31);
-    color: GlobalColourVars.$white;
-    font-family: GlobalFonts.$houschka;
+    color: $white;
+    font-family: $houschka;
     font-size: px-to-rem(26px);
     font-weight: 700;
     overflow: hidden;
@@ -25,7 +25,7 @@ $button-outline-thickness: 9px;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         aspect-ratio: 1 / 1;
-        background: GlobalColourVars.$magic-gradient;
+        background: $magic-gradient;
         border-radius: 25px;
         content: "";
         display: block;
@@ -39,7 +39,7 @@ $button-outline-thickness: 9px;
     }
 
     &::after {
-        background-color: GlobalColourVars.$midnight-blue;
+        background-color: $midnight-blue;
         border-radius: 25px;
         content: "";
         display: block;

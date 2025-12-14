@@ -1,11 +1,11 @@
-@use "global-stylesheets/GlobalColourVars.scss";
+@use "global-stylesheets/GlobalColourVars.scss" as *;;
 
 .slice {
     background-color: transparent;
     padding: 100px 25px;
     
     &--alt {
-        background-color: GlobalColourVars.$transparent-white;
+        background-color: $transparent-white;
     }
     
     &__inner {
@@ -18,7 +18,7 @@
         display: flex;
 
         &::before {
-            background-color: GlobalColourVars.$salmon-red;
+            background-color: $salmon-red;
             border-radius: 2px;
             content: "";
             display: inline-block;

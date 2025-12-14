@@ -1,4 +1,4 @@
-@use "global-stylesheets/GlobalColourVars.scss";
+@use "global-stylesheets/GlobalColourVars.scss" as *;;
 
 .dropdown {
     align-items: flex-start;
@@ -35,8 +35,8 @@
     }
 
     &__menu {
-        background-color: GlobalColourVars.$white;
-        border: 1px solid GlobalColourVars.$stone-grey;
+        background-color: $white;
+        border: 1px solid $stone-grey;
         border-radius: 8px;
         overflow: hidden;
         padding: 5px 0;
@@ -55,7 +55,7 @@
     }
 
     &:focus-within, &:hover {
-        color: GlobalColourVars.$crimson-red;
+        color: $crimson-red;
 
         .dropdown__text {
             
