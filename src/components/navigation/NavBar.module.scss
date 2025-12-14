@@ -1,9 +1,9 @@
-@import "global-stylesheets/GlobalColourVars.scss";
-@import "global-stylesheets/GlobalFunctions.scss";
+@use "global-stylesheets/GlobalColourVars.scss";
+@use "global-stylesheets/GlobalFunctions.scss";
 
 .nav {
     align-items: flex-start;
-    color: $white;
+    color: GlobalColourVars.$white;
     background-color: transparent;
     display: flex;
     font-size: px-to-rem(18px);

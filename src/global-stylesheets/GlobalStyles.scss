@@ -1,21 +1,21 @@
-@import "GlobalFonts.scss";
-@import "GlobalColourVars.scss";
-@import "GlobalFunctions.scss";
+@use "GlobalFonts.scss";
+@use "GlobalColourVars.scss";
+@use "GlobalFunctions.scss";
 
 * {
     margin: 0;
 }
 
 body {
-    background: $orbit-black;
-    background: $space-gradient;
-    color: $white;
-    font-family: $houschka;
+    background: GlobalColourVars.$orbit-black;
+    background: GlobalColourVars.$space-gradient;
+    color: GlobalColourVars.$white;
+    font-family: GlobalFonts.$houschka;
     font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $quasimoda;
+    font-family: GlobalFonts.$quasimoda;
     margin: 0;
 }
 
@@ -26,15 +26,15 @@ h1 {
 
 h2 {
     font-size: px-to-rem(34px);
-    font-weight: 900;
+    font-weight: 800;
 }
 
 h3 {
     font-size: px-to-rem(24px);
-    font-weight: 900;
+    font-weight: 800;
 }
 
 em {
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
 }

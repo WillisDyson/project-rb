@@ -1,0 +1,65 @@
+@use "global-stylesheets/GlobalColourVars.scss";
+@use "global-stylesheets/GlobalFunctions.scss";
+@use "global-stylesheets/GlobalFonts.scss";
+@use "global-stylesheets/GlobalAnimations.scss";
+
+$button-outline-thickness: 9px;
+
+.button {
+    background: transparent;
+    border-radius: 999px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.31);
+    color: GlobalColourVars.$white;
+    font-family: GlobalFonts.$houschka;
+    font-size: px-to-rem(26px);
+    font-weight: 700;
+    overflow: hidden;
+    padding: 12px 38px;
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+        animation-name: animate-button-border;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        aspect-ratio: 1 / 1;
+        background: GlobalColourVars.$magic-gradient;
+        border-radius: 25px;
+        content: "";
+        display: block;
+        height: auto;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: -1;
+    }
+
+    &::after {
+        background-color: GlobalColourVars.$midnight-blue;
+        border-radius: 25px;
+        content: "";
+        display: block;
+        height: calc(100% - $button-outline-thickness);
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.3s;
+        width: calc(100% - $button-outline-thickness - 1px);
+        z-index: -1;
+    }
+
+    &:hover {
+        &::before {
+            animation-play-state: paused;
+        }
+
+        &::after {
+            opacity: 0.8;
+        }
+    }
+}

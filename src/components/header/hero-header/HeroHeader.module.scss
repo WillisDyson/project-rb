@@ -1,5 +1,5 @@
-@import 'global-stylesheets/GlobalColourVars';
-@import 'global-stylesheets/GlobalFunctions.scss';
+@use 'global-stylesheets/GlobalColourVars.scss';
+@use 'global-stylesheets/GlobalFunctions.scss';
 
 .hero {
     background-color: transparent;
@@ -20,23 +20,13 @@
         text-align: center;
     }
 
-    &__imagewrap {
-        align-items: flex-end;
-        display: flex;
-        flex-shrink: 1;
-    
-        img {
-            max-width: 100%;
-        }
-    }
-
-    h1 {
+    &__title {
         line-height: px-to-rem(49px);
         margin-top: 25px;
     }
 
-    a {
+    &__button {
         display: inline-block;
-        margin-top: 44px;
+        margin-top: 75px;
     }
 }
