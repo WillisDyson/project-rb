@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import styles from "./NavBar.module.scss";
-import Dropdown from "../global/dropdown/Dropdown";
+import TextDropdown from "../global/text-dropdown/TextDropdown";
 import TextLink from "../global/text-link/TextLink";
 import ButtonLink from "../global/button-link/ButtonLink";
 import Logo from "../global/logo/Logo";
@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       {location.pathname !== "/" && <Logo href="/" />}
-      <Dropdown text={"All services"} />
+      <TextDropdown text={"All services"} />
       <TextLink text={"About us"} href="/about" />
       <TextLink text={"Case studies"} href="/case-studies" />
       <TextLink text={"Blog"} href="/blog" />

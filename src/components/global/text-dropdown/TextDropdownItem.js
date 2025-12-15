@@ -1,4 +1,4 @@
-import styles from "./DropdownItem.module.scss";
+import styles from "./TextDropdownItem.module.scss";
 import { Link } from "react-router-dom";
 
 const DropdownItem = ({ className, variant, text, href }) => {
@@ -7,7 +7,7 @@ const DropdownItem = ({ className, variant, text, href }) => {
   };
 
   return (
-    <li className={styles.dropdownitem}>
+    <li className={styles["dropdown-item"]}>
       <Link
         to={href}
         className={`${className ? className : ""} ${

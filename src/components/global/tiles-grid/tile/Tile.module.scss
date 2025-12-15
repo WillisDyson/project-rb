@@ -7,20 +7,31 @@
     border-radius: $global-border-radius;
     display: flex;
     flex-direction: column;
+    margin: 0 12.5px;
     padding: 20px 24px 24px;
     width: 100%;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
 
     &__header-wrap {
         align-items: center;
         display: flex;
         gap: 20px;
-    }
-
-    h3 {
         margin-bottom: 16px;
     }
 
-    p {
+    &__image {
+        max-height: 21px;
+        max-width: 21px;
+    }
+
+    &__desc {
         color: $pale-red;
     }
 }

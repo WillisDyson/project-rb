@@ -1,5 +1,5 @@
-import styles from "./Dropdown.module.scss";
-import DropdownItem from "./DropdownItem";
+import styles from "./TextDropdown.module.scss";
+import DropdownItem from "./TextDropdownItem";
 
 const Dropdown = ({ className, variant, text }) => {
   return (

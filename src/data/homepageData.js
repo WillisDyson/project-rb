@@ -1,3 +1,5 @@
+import whyIcon1 from "assets/tiles/why-icon-1.svg";
+
 import tileIcon1 from "assets/tiles/tile-icon.svg";
 import tileIcon2 from "assets/tiles/tile-icon.svg";
 import tileIcon3 from "assets/tiles/tile-icon.svg";
@@ -7,13 +9,12 @@ import tileIcon6 from "assets/tiles/tile-icon.svg";
 
 export const whyAccessibilityGrid = [
   {
-    icon: tileIcon1,
+    imageUrl: whyIcon1,
     header: "1 in 6 people have a disability",
     description:
       "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
   },
   {
-    icon: tileIcon1,
     header: "The law is changing for UK businesses",
     description:
       "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
