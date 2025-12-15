@@ -1,6 +1,9 @@
 @use "GlobalFonts.scss" as *;
-@use "GlobalColourVars.scss" as *;
+@use "GlobalColours.scss" as *;
 @use "GlobalFunctions.scss" as *;
+
+// Border radius
+$global-border-radius: 15px;
 
 * {
     margin: 0;
@@ -30,8 +33,13 @@ h2 {
 }
 
 h3 {
-    font-size: px-to-rem(24px);
+    font-size: px-to-rem(22px);
     font-weight: 800;
+}
+
+p {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(24px);
 }
 
 em {

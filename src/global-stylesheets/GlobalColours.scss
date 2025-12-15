@@ -3,22 +3,24 @@ $space-gradient: linear-gradient(12deg, rgba(83, 0, 3, 1) 0%, rgba(4, 0, 0, 1) 1
 $magic-gradient: linear-gradient(45deg, rgba(255, 49, 52, 1) 0%, rgba(33, 69, 250, 1) 100%);
 
 // Reds
+$pale-red: #DEB7B7;
+$salmon-red: #FF5C5E;
 $crimson-red: #BE0001;
 $garnet-red: #7F0001;
-$salmon-red: #FF5C5E;
+$dark-cherry-red: #200000;
 
 // Blues
 $midnight-blue: #000B33;
 
 // Blacks
-$midnight-black: #1D3035;
 $orbit-black: #02172D;
+$midnight-black: #1D3035;
 
 // Greys
 $ash-grey: #F7F7F7;
 $stone-grey: #A9A9A9;
 
 // Whites
-$transparent-white: rgba(255, 255, 255, 0.05);
-$off-white: #B4B4B4;
 $white: #FFFFFF;
+$off-white: #B4B4B4;
+$transparent-white: rgba(255, 255, 255, 0.05);

@@ -1,8 +1,6 @@
-@use "global-stylesheets/GlobalColourVars.scss" as *;;
+@use "global-stylesheets/GlobalColours.scss" as *;
 
 .tiles-grid {
     display: flex;
-    gap: 53px;
     justify-content: space-between;
-    margin-top: 55px;
-}
+} 

@@ -1,4 +1,4 @@
-@use "global-stylesheets/GlobalColourVars.scss" as *;;
+@use "global-stylesheets/GlobalColours.scss" as *;
 
 .slice {
     background-color: transparent;
@@ -16,6 +16,7 @@
     h2 {
         align-items: center;
         display: flex;
+        margin-bottom: 60px;
 
         &::before {
             background-color: $salmon-red;

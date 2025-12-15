@@ -1,4 +1,4 @@
-@use 'global-stylesheets/GlobalColourVars.scss';
+@use 'global-stylesheets/GlobalColours.scss' as *;
 
 .heroimage {
     background-color: $off-white;

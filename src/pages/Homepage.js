@@ -2,7 +2,7 @@ import Slice from "components/global/slice/Slice";
 import HeroHeader from "components/header/hero-header/HeroHeader";
 import TilesGrid from "components/global/tiles-grid/TilesGrid";
 import Tile from "components/global/tiles-grid/tile/Tile";
-import { whyAccessibilityGrid, theRightWayGrid } from "data/tilesData";
+import { whyAccessibilityGrid, theRightWayGrid } from "data/homepageData";
 
 const Homepage = () => {
   return (
