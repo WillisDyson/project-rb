@@ -4,8 +4,7 @@ const TilesGrid = ({ className, variant, children }) => {
   return (
     <div
       className={`${styles["tiles-grid"]} ${className ? className : ""} ${
-        variant ? styles[variant] : ""
-      }`}
+        variant ? styles[variant] : ""}`}
     >
       {children}
     </div>

@@ -2,7 +2,7 @@ import Slice from "components/global/slice/Slice";
 import HeroHeader from "components/header/hero-header/HeroHeader";
 import TilesGrid from "components/global/tiles-grid/TilesGrid";
 import Tile from "components/global/tiles-grid/tile/Tile";
-import { whyAccessibilityGrid, theRightWayGrid } from "data/homepageData";
+import { whyAccessibilityGrid, theRightWayGrid, whatGoodAccessibilityBrings } from "data/homepageData";
 
 const Homepage = () => {
   return (
@@ -29,17 +29,18 @@ const Homepage = () => {
         </TilesGrid>
       </Slice>
       <Slice
-        headerText={<>How other businesses are already benefitting</>}
+        headerText={<>What good accessibility brings to your business</>}
         variant={"slice--alt"}
       >
-        <TilesGrid>
-          {theRightWayGrid.map((tile, idx) => (
+        <TilesGrid variant="tiles-grid--tilted-ends">
+          {whatGoodAccessibilityBrings.map((tile, idx) => (
             <Tile
               key={idx}
               imageUrl={tile.imageUrl}
               imageAlt={tile.imageAlt}
               header={tile.header}
               description={tile.description}
+              variant="tile--blue"
             />
           ))}
         </TilesGrid>

@@ -17,7 +17,12 @@ body {
     font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $quasimoda;
     margin: 0;
 }
@@ -33,7 +38,7 @@ h2 {
 }
 
 h3 {
-    font-size: px-to-rem(22px);
+    font-size: px-to-rem(24px);
     font-weight: 800;
 }
 

@@ -3,4 +3,31 @@
 .tiles-grid {
     display: flex;
     justify-content: space-between;
-} 
+
+    &--tilted-ends {
+        & > div {
+
+            &:first-child {
+                transform: rotate(-2deg);
+            }
+
+            &:last-child {
+                transform: rotate(2deg);
+            }
+
+            &:first-child, &:last-child {
+                top: 8px;
+            }
+        }
+    }
+
+    &--tilted-alternate {
+        & > div {
+            transform: rotate(-2deg);
+
+            &:nth-child(even) {
+                transform: rotate(2deg);
+            }
+        }
+    }
+}

@@ -21,23 +21,17 @@ export const whyAccessibilityGrid = [
   },
 ];
 
-export const theRightWayGrid = [
+export const whatGoodAccessibilityBrings = [
   {
-    imageUrl: tileIcon4,
-    imageAlt: "Icon 4",
-    header: "Real Results",
-    description: "See how businesses improved accessibility.",
+    header: "More customers",
+    description: "By making your services accessible, you are removing barriers and opening the door to more customers.",
   },
   {
-    imageUrl: tileIcon5,
-    imageAlt: "Icon 5",
-    header: "Customer Stories",
-    description: "Hear from satisfied clients.",
+    header: "A better user experience",
+    description: "Good accessibility doesn't just benefit those with access needs – it helps to provide a better user experience for all of your customers.",
   },
   {
-    imageUrl: tileIcon6,
-    imageAlt: "Icon 6",
-    header: "Growth & Opportunity",
-    description: "Unlock new markets with accessibility.",
+    header: "Legal compliance",
+    description: "In the UK, all business are legally required to meet minimum accessibility requirements by the Equality Act 2010.",
   },
 ];
