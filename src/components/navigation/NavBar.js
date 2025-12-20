@@ -1,9 +1,9 @@
 import { useLocation } from "react-router-dom";
 import styles from "./NavBar.module.scss";
-import TextDropdown from "../global/text-dropdown/TextDropdown";
-import TextLink from "../global/text-link/TextLink";
-import ButtonLink from "../global/button-link/ButtonLink";
-import Logo from "../global/logo/Logo";
+import TextDropdown from "../generic/text-dropdown/TextDropdown";
+import TextLink from "../generic/text-link/TextLink";
+import ButtonLink from "../generic/button-link/ButtonLink";
+import Logo from "../generic/logo/Logo";
 
 const NavBar = () => {
   const location = useLocation();

@@ -1,7 +1,7 @@
 import styles from "./HeroHeader.module.scss";
-import Logo from "components/global/logo/Logo";
-import ButtonLink from "components/global/button-link/ButtonLink";
-import TextLink from "components/global/text-link/TextLink";
+import Logo from "components/generic/logo/Logo";
+import ButtonLink from "components/generic/button-link/ButtonLink";
+import TextLink from "components/generic/text-link/TextLink";
 
 const HeroHeader = ({ className, variant, headerText }) => {
   return (
@@ -17,6 +17,7 @@ const HeroHeader = ({ className, variant, headerText }) => {
           <ButtonLink
             text="See contact info and pricing"
             className={`${styles.hero__button}`}
+            variant={"button--hero"}
           />
         </div>
       </div>

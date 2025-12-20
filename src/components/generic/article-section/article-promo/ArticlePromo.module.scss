@@ -1,0 +1,41 @@
+@use "global-stylesheets/GlobalStyles.scss" as *;
+@use "global-stylesheets/GlobalColours.scss" as *;
+
+
+
+.article-promo {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: $global-border-radius;
+    box-shadow: $global-box-shadow;
+    display: flex;
+    min-height: 327px;
+    overflow: hidden;
+
+    &:nth-child(even) {
+        .article-promo__text-section {
+            order: 2;
+        }
+
+        .article-promo__image {
+            order: 1;
+        }
+    }
+
+    &__text-section {
+        display: flex;
+        flex-direction: column;
+        max-width: 387px;
+        padding: 33px 50px;
+    }
+
+    &__image-section {
+        background-position: center;
+        background-size: cover;
+        min-height: 0;;
+        width: 100%;
+    }
+
+    &__header, &__desc {
+        margin-bottom: 20px;
+    }
+}

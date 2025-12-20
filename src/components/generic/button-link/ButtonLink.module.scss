@@ -1,0 +1,72 @@
+@use "global-stylesheets/GlobalColours.scss" as *;
+@use "global-stylesheets/GlobalFunctions.scss" as *;
+@use "global-stylesheets/GlobalFonts.scss" as *;
+@use "global-stylesheets/GlobalAnimations.scss" as *;
+
+$button-outline-thickness: 4px;
+$button-padding-y: 12px;
+$button-padding-x: 38px;
+
+.button {
+    background: #0F2338;
+    border: $button-outline-thickness solid $white;
+    border-radius: 999px;
+    color: $white;
+    display: inline-block;
+    font-family: $houschka;
+    font-size: px-to-rem(26px);
+    font-weight: 700;
+    padding: calc($button-padding-y - $button-outline-thickness) calc($button-padding-x - $button-outline-thickness);
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &--hero {
+        background: transparent;
+        border: unset;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.31);
+        padding: $button-padding-y $button-padding-x;
+        overflow: hidden;
+    
+        &::before {
+            animation-name: animate-button-border;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            aspect-ratio: 1 / 1;
+            background: $magic-gradient;
+            height: auto;
+            width: 100%;
+        }
+    
+        &::after {
+            background-color: $midnight-blue;
+            height: calc(100% - ($button-outline-thickness * 2));
+            transition: 0.3s;
+            width: calc(100% - ($button-outline-thickness * 2) - 1px);
+            
+        }
+
+        &::before, &::after {
+            border-radius: 999px;
+            content: "";
+            display: block;
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    
+        &:hover {
+            &::before {
+                animation-play-state: paused;
+            }
+    
+            &::after {
+                opacity: 0.8;
+            }
+        }
+    }
+}
