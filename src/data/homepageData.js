@@ -1,6 +1,4 @@
 import whyIcon1 from "assets/tiles/why-icon-1.svg";
-
-import tileIcon1 from "assets/tiles/tile-icon.svg";
 import placeholderArticlePreview from "assets/articles/placeholder-article-preview.png";
 
 export const whyAccessibility = [
