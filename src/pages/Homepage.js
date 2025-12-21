@@ -2,9 +2,10 @@ import Slice from "components/generic/slice/Slice";
 import HeroHeader from "components/header/hero-header/HeroHeader";
 import TilesGrid from "components/generic/tiles-grid/TilesGrid";
 import Tile from "components/generic/tiles-grid/tile/Tile";
-import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings } from "data/homepageData";
+import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnowData } from "data/homepageData";
 import ArticleSection from "components/generic/article-section/ArticleSection";
 import ArticlePromo from "components/generic/article-section/article-promo/ArticlePromo";
+import InfoInsert from "components/generic/info-insert/InfoInsert";
 
 const Homepage = () => {
   return (
@@ -49,7 +50,6 @@ const Homepage = () => {
       </Slice>
       <Slice
         headerText={<>What good accessibility brings to your business</>}
-        variant={"slice--alt"}
       >
         <TilesGrid variant="tiles-grid--tilted-ends">
           {whatGoodAccessibilityBrings.map((tile, idx) => (
@@ -63,6 +63,14 @@ const Homepage = () => {
             />
           ))}
         </TilesGrid>
+      </Slice>
+      <Slice variant={"slice--insert"}>      
+        <InfoInsert variant="tiles-grid--tilted-ends"
+          headerText={<>{didYouKnowData.headerText}</>}
+          mainText={<>{didYouKnowData.mainText}</>}
+          buttonText={<>{didYouKnowData.buttonText}</>}
+          buttonUrl={didYouKnowData.buttonUrl}
+        />
       </Slice>
     </>
   );

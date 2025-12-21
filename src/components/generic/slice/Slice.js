@@ -8,7 +8,7 @@ const Slice = ({ className, headerText, variant, children }) => {
       }`}
     >
       <div className={styles["slice__inner"]}>
-        <h2>{headerText}</h2>
+        {headerText && <h2>{headerText}</h2>}
         {children}
       </div>
     </section>

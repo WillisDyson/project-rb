@@ -7,27 +7,32 @@
     &--alt {
         background-color: $transparent-white;
     }
+
+    &--insert {
+        background-color: $transparent-white;
+        padding: 60px 25px;
+    }
     
     &__inner {
         margin: 0 auto;
         max-width: 1268px;
-    }
-    
-    h2 {
-        align-items: center;
-        display: flex;
-        margin-bottom: 60px;
 
-        &::before {
-            background-color: $salmon-red;
-            border-radius: 2px;
-            content: "";
-            display: inline-block;
-            height: 36px;
-            margin-right: 26px;
-            position: relative;
-            top: 2px;
-            width: 8px;
+        & > h2 {
+                align-items: center;
+                display: flex;
+                margin-bottom: 60px;
+        
+                &::before {
+                    background-color: $salmon-red;
+                    border-radius: 2px;
+                    content: "";
+                    display: inline-block;
+                    height: 36px;
+                    margin-right: 26px;
+                    position: relative;
+                    top: 2px;
+                    width: 8px;
+                }
+            }
         }
-    }
 }

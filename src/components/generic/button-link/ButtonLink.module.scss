@@ -4,27 +4,34 @@
 @use "global-stylesheets/GlobalAnimations.scss" as *;
 
 $button-outline-thickness: 4px;
-$button-padding-y: 12px;
-$button-padding-x: 38px;
+$button-padding-y: 10px;
+$button-padding-x: 34px;
 
 .button {
-    background: #0F2338;
+    background: transparent;
     border: $button-outline-thickness solid $white;
     border-radius: 999px;
+    border-width: 2px;
     color: $white;
     display: inline-block;
+    font-size: px-to-rem(16px);
     font-family: $houschka;
-    font-size: px-to-rem(26px);
     font-weight: 700;
     padding: calc($button-padding-y - $button-outline-thickness) calc($button-padding-x - $button-outline-thickness);
     position: relative;
     text-decoration: none;
     transition: 0.3s;
 
+
+    &:hover {
+        background-color: $white;
+        color: $midnight-blue;
+    }
+
     &--hero {
-        background: transparent;
         border: unset;
         box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.31);
+        font-size: px-to-rem(26px);
         padding: $button-padding-y $button-padding-x;
         overflow: hidden;
     
@@ -60,6 +67,9 @@ $button-padding-x: 38px;
         }
     
         &:hover {
+            background-color: unset;
+            color: unset;
+            
             &::before {
                 animation-play-state: paused;
             }

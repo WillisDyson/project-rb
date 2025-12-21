@@ -8,14 +8,6 @@
 
     &__button {
         align-self: flex-start;
-        border-width: 2px;
-        background-color: transparent;
-        font-size: px-to-rem(16px);
         margin-top: auto;
-
-        &:hover {
-            background-color: $white;
-            color: $midnight-blue;
-        }
     }
 }

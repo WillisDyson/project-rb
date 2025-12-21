@@ -7,15 +7,17 @@
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: $global-border-radius;
     box-shadow: $global-box-shadow;
+    color: $white;
     display: flex;
     min-height: 327px;
     overflow: hidden;
-
+    text-decoration: none;
+    
     &:nth-child(even) {
         .article-promo__text-section {
             order: 2;
         }
-
+        
         .article-promo__image {
             order: 1;
         }
@@ -37,5 +39,9 @@
 
     &__header, &__desc {
         margin-bottom: 20px;
+    }
+
+    &__desc {
+        color: $pale-blue;
     }
 }

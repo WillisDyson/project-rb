@@ -1,0 +1,24 @@
+@use "global-stylesheets/GlobalColours.scss" as *;
+@use "global-stylesheets/GlobalFunctions.scss" as *;
+
+.info-insert {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 836px;
+    text-align: center;
+
+    &__header-text {
+        color: $salmon-red;
+        font-size: px-to-rem(24px);
+        font-weight: 800;
+    }
+
+    &__main-text {
+        font-size: px-to-rem(34px);
+        font-weight: 800;
+        line-height: 1.2;
+    }
+}

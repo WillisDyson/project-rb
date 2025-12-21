@@ -50,3 +50,10 @@ export const whatGoodAccessibilityBrings = [
     description: "In the UK, all business are legally required to meet minimum accessibility requirements by the Equality Act 2010.",
   },
 ];
+
+export const didYouKnowData = {
+  headerText: "Did you know?",
+  mainText: "You may still have to comply with EU Accessibility laws, even if your business is based in the UK.",
+  buttonText: "Find out why",
+  buttonUrl: "#",
+};
