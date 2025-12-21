@@ -57,3 +57,26 @@ export const didYouKnowData = {
   buttonText: "Find out why",
   buttonUrl: "#",
 };
+
+export const whyRollingBlock = [
+  {
+    imageUrl: whyIcon1,
+    header: "People are at the heart of what we do.",
+    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+  },
+  {
+    imageUrl: whyIcon1,
+    header: "People are at the heart of what we do.",
+    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+  },
+  {
+    imageUrl: whyIcon1,
+    header: "People are at the heart of what we do.",
+    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+  },
+  {
+    imageUrl: whyIcon1,
+    header: "People are at the heart of what we do.",
+    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+  }
+];

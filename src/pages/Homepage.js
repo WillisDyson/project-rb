@@ -2,7 +2,7 @@ import Slice from "components/generic/slice/Slice";
 import HeroHeader from "components/header/hero-header/HeroHeader";
 import TilesGrid from "components/generic/tiles-grid/TilesGrid";
 import Tile from "components/generic/tiles-grid/tile/Tile";
-import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnowData } from "data/homepageData";
+import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnowData, whyRollingBlock } from "data/homepageData";
 import ArticleSection from "components/generic/article-section/ArticleSection";
 import ArticlePromo from "components/generic/article-section/article-promo/ArticlePromo";
 import InfoInsert from "components/generic/info-insert/InfoInsert";
@@ -71,6 +71,22 @@ const Homepage = () => {
           buttonText={<>{didYouKnowData.buttonText}</>}
           buttonUrl={didYouKnowData.buttonUrl}
         />
+      </Slice>
+      <Slice
+        headerText={<>Why choose Rolling Block?</>}
+      >
+        <TilesGrid variant="tiles-grid--tilted-alternate">
+          {whyRollingBlock.map((tile, idx) => (
+            <Tile
+              key={idx}
+              imageUrl={tile.imageUrl}
+              imageAlt={tile.imageAlt}
+              header={tile.header}
+              description={tile.description}
+              variant="tile--stacked-content"
+            />
+          ))}
+        </TilesGrid>
       </Slice>
     </>
   );

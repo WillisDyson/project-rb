@@ -20,6 +20,13 @@
         color: $pale-blue;
     }
 
+    &--stacked-content {
+        .tile__header-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
     &:first-child {
         margin-left: 0;
     }
