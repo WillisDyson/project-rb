@@ -20,7 +20,7 @@ const Homepage = () => {
         }
       />
       <Slice headerText={<>Why invest in Web Accessibility?</>}>
-        <TilesGrid>
+        <TilesGrid noOfColumns={2}>
           {whyAccessibility.map((tile, idx) => (
             <Tile
               key={idx}
@@ -52,7 +52,7 @@ const Homepage = () => {
       <Slice
         headerText={<>What good accessibility brings to your business</>}
       >
-        <TilesGrid variant="tiles-grid--tilted-ends">
+        <TilesGrid variant="tiles-grid--tilted-ends" noOfColumns={3}>
           {whatGoodAccessibilityBrings.map((tile, idx) => (
             <Tile
               key={idx}
@@ -76,7 +76,7 @@ const Homepage = () => {
       <Slice
         headerText={<>Why choose Rolling Block?</>}
       >
-        <TilesGrid variant="tiles-grid--tilted-alternate">
+        <TilesGrid noOfColumns={4} variant="tiles-grid--tilted-alternate">
           {whyRollingBlock.map((tile, idx) => (
             <Tile
               key={idx}
@@ -92,7 +92,7 @@ const Homepage = () => {
       <Slice
         headerText={<>Our services</>}
       >
-        <TilesGrid wrapItems="true">
+        <TilesGrid noOfColumns={2}>
           {ourServices.map((tile, idx) => (
             <Tile
               key={idx}
@@ -101,7 +101,6 @@ const Homepage = () => {
               header={tile.header}
               description={tile.description}
               variant="tile--blue"
-              tileWidth={"50%"}
             />
           ))}
         </TilesGrid>

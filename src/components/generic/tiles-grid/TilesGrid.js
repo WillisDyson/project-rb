@@ -1,11 +1,13 @@
 import styles from "./TilesGrid.module.scss";
 
-const TilesGrid = ({ className, variant, tileWidth, wrapItems, children }) => {
+
+const TilesGrid = ({ className, variant, noOfColumns, children }) => {
+  const columnClass = noOfColumns ? `tiles-grid--${noOfColumns}-col` : "";
+
   return (
     <div
-      className={`${styles["tiles-grid"]} ${className ? className : ""} ${
+      className={`${styles["tiles-grid"]} ${styles[columnClass]} ${className ? className : ""} ${
         variant ? styles[variant] : ""}`}
-        style={wrapItems && { flexWrap: "wrap" }}
     >
       {children}
     </div>

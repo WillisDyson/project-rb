@@ -6,13 +6,12 @@
     border: 2px solid $salmon-red;
     border-radius: $global-border-radius;
     box-shadow: $global-box-shadow;
+    box-sizing: border-box;
     color: $pale-red;
     display: flex;
-    flex-basis: 100%;
     flex-direction: column;
-    flex-grow: 0;
+    height: 100%;
     padding: 20px 24px 24px;
-    position: relative;
 
     &--blue {
         background-color: $orbit-blue;
@@ -25,6 +24,11 @@
             flex-direction: column;
             align-items: flex-start;
         }
+    }
+
+    &__outer {
+        padding: 12.5px;
+        position: relative;
     }
 
     &__header-wrap {
