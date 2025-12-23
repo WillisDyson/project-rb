@@ -8,11 +8,11 @@
     box-shadow: $global-box-shadow;
     color: $pale-red;
     display: flex;
+    flex-basis: 100%;
     flex-direction: column;
-    margin: 0 12.5px;
+    flex-grow: 0;
     padding: 20px 24px 24px;
     position: relative;
-    width: 100%;
 
     &--blue {
         background-color: $orbit-blue;
@@ -25,14 +25,6 @@
             flex-direction: column;
             align-items: flex-start;
         }
-    }
-
-    &:first-child {
-        margin-left: 0;
-    }
-
-    &:last-child {
-        margin-right: 0;
     }
 
     &__header-wrap {

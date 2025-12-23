@@ -1,7 +1,7 @@
 import styles from "./Tile.module.scss";
 
-const Tile = ({ imageUrl, imageAlt, header, description, variant }) => (
-  <div className={`${styles.tile} ${variant ? styles[variant] : ""}`}>
+const Tile = ({ imageUrl, imageAlt, header, description, tileWidth, variant }) => (
+  <div className={`${styles.tile} ${variant ? styles[variant] : ""}`} style={tileWidth && { flexBasis: tileWidth }}>
       <div className={styles["tile__header-wrap"]}>
         {imageUrl && (
           <img src={imageUrl} alt={imageAlt || ""} className={styles.tile__image} />

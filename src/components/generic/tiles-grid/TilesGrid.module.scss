@@ -2,6 +2,7 @@
 
 .tiles-grid {
     display: flex;
+    gap: 25px;
     justify-content: space-between;
 
     &--tilted-ends {

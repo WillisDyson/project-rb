@@ -80,3 +80,30 @@ export const whyRollingBlock = [
     description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
   }
 ];
+
+export const ourServices = [
+  {
+    imageUrl: whyIcon1,
+    header: "Accessibility Compliance audits",
+    description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
+    url: "#",
+  },
+  {
+    imageUrl: whyIcon1,
+    header: "Accessibility Compliance audits",
+    description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
+    url: "#",
+  },
+  {
+    imageUrl: whyIcon1,
+    header: "Accessibility Compliance audits",
+    description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
+    url: "#",
+  },
+  {
+    imageUrl: whyIcon1,
+    header: "Accessibility Compliance audits",
+    description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
+    url: "#",
+  }
+];

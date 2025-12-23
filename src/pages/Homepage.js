@@ -6,6 +6,7 @@ import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, 
 import ArticleSection from "components/generic/article-section/ArticleSection";
 import ArticlePromo from "components/generic/article-section/article-promo/ArticlePromo";
 import InfoInsert from "components/generic/info-insert/InfoInsert";
+import { ourServices } from "data/homepageData";
 
 const Homepage = () => {
   return (
@@ -32,7 +33,7 @@ const Homepage = () => {
         </TilesGrid>
       </Slice>
       <Slice
-        headerText={<>How are already helping other businesses</>}
+        headerText={<>How other businesses are benefitting</>}
       >
         <ArticleSection variant="tiles-grid--tilted-ends">
           {helpingOtherBusinesses.map((article, idx) => (
@@ -84,6 +85,23 @@ const Homepage = () => {
               header={tile.header}
               description={tile.description}
               variant="tile--stacked-content"
+            />
+          ))}
+        </TilesGrid>
+      </Slice>
+      <Slice
+        headerText={<>Our services</>}
+      >
+        <TilesGrid wrapItems="true">
+          {ourServices.map((tile, idx) => (
+            <Tile
+              key={idx}
+              imageUrl={tile.imageUrl}
+              imageAlt={tile.imageAlt}
+              header={tile.header}
+              description={tile.description}
+              variant="tile--blue"
+              tileWidth={"50%"}
             />
           ))}
         </TilesGrid>
