@@ -21,6 +21,7 @@ $button-padding-x: 34px;
     position: relative;
     text-decoration: none;
     transition: 0.3s;
+    user-select: none;
 
 
     &:hover {

@@ -1,4 +1,12 @@
 @import url("https://use.typekit.net/zed7vck.css");
+@keyframes animate-button-border {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
 * {
   margin: 0;
 }
@@ -6,12 +14,17 @@
 body {
   background: #02172D;
   background: linear-gradient(12deg, rgb(83, 0, 3) 0%, rgb(4, 0, 0) 18%, rgb(2, 23, 45) 44%, rgb(1, 4, 8) 80%, rgb(161, 1, 3) 100%);
-  color: GlobalColourVars.#FFFFFF;
+  color: #FFFFFF;
   font-family: "houschka-pro", Arial, sans-serif;
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "quasimoda", "houschka-pro", Arial, serif;
   margin: 0;
 }
@@ -29,6 +42,11 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 800;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 em {

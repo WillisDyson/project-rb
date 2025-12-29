@@ -1,5 +1,6 @@
-@use "global-stylesheets/GlobalStyles.scss" as *;
+
 @use "global-stylesheets/GlobalColours.scss" as *;
+@use "global-stylesheets/GlobalVariables.scss" as *;
 
 .tile {
     background-color: $dark-cherry-red;
@@ -27,7 +28,7 @@
     }
 
     &__outer {
-        padding: 12.5px;
+        padding: calc($global-tile-gap / 2);
         position: relative;
     }
 

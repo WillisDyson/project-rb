@@ -1,6 +1,15 @@
 import whyIcon1 from "assets/tiles/why-icon-1.svg";
 import placeholderArticlePreview from "assets/articles/placeholder-article-preview.png";
 
+export const heroInfo = {
+  headerText: <>
+            We make web accessibility simple, so your services work for
+            <em> everyone</em>.
+          </>,
+  buttonText: "See more info & pricing",
+  buttonUrl: "#",
+};
+
 export const whyAccessibility = [
   {
     imageUrl: whyIcon1,
@@ -51,7 +60,7 @@ export const whatGoodAccessibilityBrings = [
   },
 ];
 
-export const didYouKnowData = {
+export const didYouKnow = {
   headerText: "Did you know?",
   mainText: "You may still have to comply with EU Accessibility laws, even if your business is based in the UK.",
   buttonText: "Find out why",
@@ -107,3 +116,9 @@ export const ourServices = [
     url: "#",
   }
 ];
+
+export const getStarted = {
+  headerText: "Have a question, or ready to get started?",
+  buttonText: "See more info & pricing",
+  buttonUrl: "#",
+};

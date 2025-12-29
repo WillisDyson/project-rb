@@ -1,10 +1,12 @@
+
 @use "global-stylesheets/GlobalColours.scss" as *;
 @use "global-stylesheets/GlobalFunctions.scss" as *;
+@use "global-stylesheets/GlobalVariables.scss" as *;
 
 .article-section {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: calc($global-tile-gap * 1.5);
 
     &__button {
         align-self: flex-start;

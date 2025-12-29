@@ -1,19 +1,9 @@
-@use "GlobalFonts.scss" as *;
+@use "GlobalAnimations.scss" as *;
+@use "GlobalBreakpoints.scss" as *;
 @use "GlobalColours.scss" as *;
+@use "GlobalFonts.scss" as *;
 @use "GlobalFunctions.scss" as *;
-
-// Breakpoints
-$very-small-screen: 400px;
-$small-screen: 600px;
-$medium-screen: 850px;
-$large-screen: 1400px;
-$very-large-screen: 2400px;
-
-// Border radius
-$global-border-radius: 15px;
-
-// Box shadows
-$global-box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.32);
+@use "GlobalVariables.scss" as *;
 
 * {
     margin: 0;

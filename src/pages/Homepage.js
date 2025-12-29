@@ -2,22 +2,20 @@ import Slice from "components/generic/slice/Slice";
 import HeroHeader from "components/header/hero-header/HeroHeader";
 import TilesGrid from "components/generic/tiles-grid/TilesGrid";
 import Tile from "components/generic/tiles-grid/tile/Tile";
-import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnowData, whyRollingBlock } from "data/homepageData";
+import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnow, whyRollingBlock, heroInfo, getStarted } from "data/homepageData";
 import ArticleSection from "components/generic/article-section/ArticleSection";
 import ArticlePromo from "components/generic/article-section/article-promo/ArticlePromo";
 import InfoInsert from "components/generic/info-insert/InfoInsert";
 import { ourServices } from "data/homepageData";
+import CtaTile from "components/generic/tiles-grid/cta-tile/CtaTile";
 
 const Homepage = () => {
   return (
     <>
       <HeroHeader
-        headerText={
-          <>
-            We make web accessibility simple, so your services work for
-            <em> everyone</em>.
-          </>
-        }
+        headerText={<>{heroInfo.headerText}</>}
+        buttonText={<>{heroInfo.buttonText}</>}
+        buttonUrl={heroInfo.buttonUrl}
       />
       <Slice headerText={<>Why invest in Web Accessibility?</>}>
         <TilesGrid noOfColumns={2}>
@@ -67,10 +65,10 @@ const Homepage = () => {
       </Slice>
       <Slice variant={"slice--insert"}>      
         <InfoInsert variant="tiles-grid--tilted-ends"
-          headerText={<>{didYouKnowData.headerText}</>}
-          mainText={<>{didYouKnowData.mainText}</>}
-          buttonText={<>{didYouKnowData.buttonText}</>}
-          buttonUrl={didYouKnowData.buttonUrl}
+          headerText={<>{didYouKnow.headerText}</>}
+          mainText={<>{didYouKnow.mainText}</>}
+          buttonText={<>{didYouKnow.buttonText}</>}
+          buttonUrl={didYouKnow.buttonUrl}
         />
       </Slice>
       <Slice
@@ -104,6 +102,11 @@ const Homepage = () => {
             />
           ))}
         </TilesGrid>
+        <CtaTile
+          headerText={<>{getStarted.headerText}</>}
+          buttonText={<>{getStarted.buttonText}</>}
+          buttonUrl={getStarted.buttonUrl}>
+        </CtaTile>
       </Slice>
     </>
   );

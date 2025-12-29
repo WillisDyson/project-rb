@@ -1,0 +1,30 @@
+
+@use "global-stylesheets/GlobalColours.scss" as *;
+@use "global-stylesheets/GlobalVariables.scss" as *;
+
+.cta-tile {
+    align-items: center;
+    background-color: $dark-cherry-red;
+    border: 2px solid $salmon-red;
+    border-radius: $global-border-radius;
+    box-shadow: $global-box-shadow;
+    box-sizing: border-box;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    margin-top: $global-tile-gap;
+    padding: 58px 20px 50px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    &__header {
+
+    }
+
+    &__button {
+
+    }
+}
