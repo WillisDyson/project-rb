@@ -1,0 +1,6 @@
+@use 'global-stylesheets/GlobalColours.scss' as *;
+@use 'global-stylesheets/GlobalFunctions.scss' as *;
+
+.footer-links {
+    background-color: $charcoal-black;
+}

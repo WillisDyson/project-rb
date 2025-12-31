@@ -2,11 +2,11 @@ import Slice from "components/generic/slice/Slice";
 import HeroHeader from "components/header/hero-header/HeroHeader";
 import TilesGrid from "components/generic/tiles-grid/TilesGrid";
 import Tile from "components/generic/tiles-grid/tile/Tile";
-import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnow, whyRollingBlock, heroInfo, getStarted } from "data/homepageData";
+import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnow, whyRollingBlock, heroInfo, getStarted } from "data/homepage/homepageData";
 import ArticleSection from "components/generic/article-section/ArticleSection";
 import ArticlePromo from "components/generic/article-section/article-promo/ArticlePromo";
 import InfoInsert from "components/generic/info-insert/InfoInsert";
-import { ourServices } from "data/homepageData";
+import { ourServices } from "data/homepage/homepageData";
 import CtaTile from "components/generic/tiles-grid/cta-tile/CtaTile";
 
 const Homepage = () => {

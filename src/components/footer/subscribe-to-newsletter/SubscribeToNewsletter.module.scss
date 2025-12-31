@@ -1,0 +1,20 @@
+@use 'global-stylesheets/GlobalColours.scss' as *;
+@use 'global-stylesheets/GlobalFunctions.scss' as *;
+
+.subscribe-to-newsletter {
+    align-items: center;
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding: 50px 20px;
+
+    &__header {
+        font-size: px-to-rem(20px);
+    }
+
+    &__button {
+        font-size: px-to-rem(16px);
+    }
+}
