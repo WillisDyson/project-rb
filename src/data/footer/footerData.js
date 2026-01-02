@@ -1,3 +1,7 @@
+import facebookLogo from "assets/socials/facebook-logo.png";
+import xLogo from "assets/socials/x-logo.png";
+import linkedInLogo from "assets/socials/linkedin-logo.png";
+
 export const subscribeToNewsletterData = {
   headerText: "Want to stay up to date with Web Accessibility?",
   buttonUrl: "#",
@@ -16,8 +20,8 @@ export const legalLinksData = {
 export const socialLinksData = {
   headerText: "Find us on social media",
   links: [
-    { imageUrl: "/", href: "#", alt: "Facebook" },
-    { imageUrl: "/", href: "#", alt: "X" },
-    { imageUrl: "/", href: "#", alt: "LinkedIn" },
+    { imageUrl: facebookLogo, href: "#", alt: "Facebook" },
+    { imageUrl: xLogo, href: "#", alt: "X" },
+    { imageUrl: linkedInLogo, href: "#", alt: "LinkedIn" },
   ],
 };

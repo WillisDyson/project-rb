@@ -8,7 +8,7 @@ const FooterLinks = ({ className, variant }) => {
       <div className={styles["footer-links__inner"]}>
         <div className={styles["footer-links__column"]}>
           <h2 className={styles["footer-links__header"]}>{legalLinksData.headerText}</h2>
-          <ul className={styles["footer-links__list"]}>
+          <ul className={`${styles["footer-links__list"]} ${styles["footer-links__list--column"]}`}>
             {legalLinksData.links.map((link) => (
               <li key={`${link.href}-${link.text}`} className={styles["footer-links__item"]}>
                 <a href={link.href} className={styles["footer-links__link"]}>{link.text}</a>
@@ -22,7 +22,7 @@ const FooterLinks = ({ className, variant }) => {
             {socialLinksData.links.map((link) => (
               <li key={`${link.href}-${link.alt}`} className={styles["footer-links__item"]}>
                 <a href={link.href} className={styles["footer-links__link"]}>
-                  <img src={link.imageUrl} alt={link.alt} />
+                  <img className={styles["footer-links__logo"]} src={link.imageUrl} alt={link.alt} />
                 </a>
               </li>
             ))}

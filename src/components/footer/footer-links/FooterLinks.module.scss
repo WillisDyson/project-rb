@@ -16,6 +16,7 @@
         align-items: center;
         display: flex;
         flex-direction: column;
+        text-align: center;
         width: 178px;
     }
 
@@ -25,16 +26,25 @@
 
     &__list {
         display: flex;
-        flex-direction: column;
         gap: 15px;
         list-style: none;
         margin-top: 28px;
         padding: 0;
+
+        &--column {
+            flex-direction: column;
+        }
     }
 
     &__link {
         color: $white;
+        display: block;
         font-size: px-to-rem(12px);
         font-weight: 600;
+        max-height: 32px;
+    }
+
+    &__logo {
+        border-radius: 4px;
     }
 }
