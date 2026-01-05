@@ -6,7 +6,7 @@ const Logo = ({ className, variant }) => {
     <img
       src={logoImage}
       alt="Rolling Block logo"
-      className={`${styles.logo}${className ? className : ""} ${
+      className={`${styles.logo} ${className ? className : ""} ${
         variant ? styles[variant] : ""
       }`}
     />

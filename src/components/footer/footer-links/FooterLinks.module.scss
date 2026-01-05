@@ -42,6 +42,10 @@
         font-size: px-to-rem(12px);
         font-weight: 600;
         max-height: 32px;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__logo {

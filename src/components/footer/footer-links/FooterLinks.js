@@ -1,10 +1,10 @@
 import styles from "./FooterLinks.module.scss";
 import { legalLinksData, socialLinksData } from "data/footer/footerData";
 
-const FooterLinks = ({ className, variant }) => {
+const FooterLinks = ({ className, variant, ariaLabel }) => {
   return (
     <div className={`${styles["footer-links"]} ${className ? className : ""} ${
-        variant ? styles[variant] : ""}`}>
+        variant ? styles[variant] : ""}`} aria-label={`${socialLinksData.ariaLabel}`}>
       <div className={styles["footer-links__inner"]}>
         <div className={styles["footer-links__column"]}>
           <h2 className={styles["footer-links__header"]}>{legalLinksData.headerText}</h2>

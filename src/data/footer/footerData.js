@@ -19,9 +19,20 @@ export const legalLinksData = {
 
 export const socialLinksData = {
   headerText: "Find us on social media",
+  ariaLabel: "Footer links",
   links: [
     { imageUrl: facebookLogo, href: "#", alt: "Facebook" },
     { imageUrl: xLogo, href: "#", alt: "X" },
     { imageUrl: linkedInLogo, href: "#", alt: "LinkedIn" },
   ],
+};
+
+export const smallPrintData = {
+  ariaLabel: "Legal information",
+  text: [
+      "© 2025 Rolling Block Ltd – Registered in England & Wales – All rights reserved.",
+      "Company No. XXXXXXXX",
+      "Registered Address: XX XXXXXX XXXXX, XXXXX, XXXX XXX",
+      "VAT No. XXX XXXX XXX",
+  ]
 };
