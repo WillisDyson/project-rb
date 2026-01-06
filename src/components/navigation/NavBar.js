@@ -22,9 +22,9 @@ const NavBar = () => {
        {navLinks.links.map((link) => (
         <TextLink key={`${link.href}-${link.text}`} text={link.text} href={link.href} />
         ))}
-      {navLinks.buttons.map((button) => (
+      {/* {navLinks.buttons.map((button) => (
         <ButtonLink key={`${button.href}-${button.text}`} variant={"button--nav"} text={button.text} href={button.href} />
-      ))}
+      ))} */}
     </nav>
   );
 };

@@ -31,10 +31,10 @@ export const navLinks = {
         }
     ],
 
-    buttons: [
-        {
-            text: "Get in touch",  
-            href: "/contact"
-        }
-    ]
+    // buttons: [
+    //     {
+    //         text: "Get in touch",  
+    //         href: "/contact"
+    //     }
+    // ]
 };
