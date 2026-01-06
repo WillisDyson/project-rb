@@ -1,7 +1,8 @@
 import styles from "./TextDropdown.module.scss";
 import DropdownItem from "./TextDropdownItem";
+import DropdownArrow from "components/generic/dropdown-arrow/DropdownArrow";
 
-const Dropdown = ({ className, variant, text }) => {
+const Dropdown = ({ className, variant, text, linksData }) => {
   return (
     <div
       role="button"
@@ -10,29 +11,21 @@ const Dropdown = ({ className, variant, text }) => {
         variant ? styles[variant] : ""
       }`}
     >
-      <span className={styles["dropdown__text"]}>{text}</span>
+      <div className={styles["dropdown__text"]}>
+        <span>
+          {text}
+        </span>
+        <DropdownArrow className={`${styles["dropdown__arrow"]}`} />
+      </div>
       <div className={styles["dropdown__menu-outer"]} aria-live="polite">
         <ul className={styles["dropdown__menu"]}>
-          <DropdownItem
-            text="Web Accessibility audits and testing"
-            href="/about"
-          />
-          <DropdownItem
-            text="Web Accessibility audits and testing"
-            href="/item1"
-          />
-          <DropdownItem
-            text="Web Accessibility audits and testing"
-            href="/item1"
-          />
-          <DropdownItem
-            text="Web Accessibility audits and testing"
-            href="/item1"
-          />
-          <DropdownItem
-            text="Web Accessibility audits and testing"
-            href="/item1"
-          />
+          {linksData.map((link) => (
+            <DropdownItem
+              key={`${link.href}-${link.text}`}
+              text={link.text}
+              href={link.href}
+            />
+          ))}
         </ul>
       </div>
     </div>

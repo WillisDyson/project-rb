@@ -15,11 +15,8 @@
     &:hover {
         color: $pale-red;
 
-        .dropdown__text {
-
-            &::after {
-                transform: rotate(180deg);
-            }
+        .dropdown__arrow {
+            transform: rotate(180deg);
         }
 
         .dropdown__menu-outer {
@@ -32,19 +29,14 @@
         bottom: 1.25px;
         display: flex;
         position: relative;
+    }
 
-        &::after {
-            background-image: url('~assets/dropdown/arrow-down.svg');
-            background-size: cover;
-            content: '';
-            display: block;
-            height: 7.75px;
-            margin-left: 8px;
-            position: relative;
-            transition: 0.3s;
-            top: 1.25px;
-            width: 12.77px;
-        }
+    &__arrow {
+        display: block;
+        margin-left: 8px;
+        position: relative;
+        transition: 0.3s;
+        top: 1.25px;
     }
 
     &__menu-outer {
@@ -64,9 +56,5 @@
 
     &--bold {
         font-weight: 700;
-
-        &::after {
-            background-image: url('~assets/dropdown/arrow-down-bold.svg');
-        }
     }
 }
