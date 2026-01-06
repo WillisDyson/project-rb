@@ -5,7 +5,7 @@ import { smallPrintData } from "data/footer/footerData";
 const SmallPrint = ({ className, variant, ariaLabel }) => {
   return (
     <div className={`${styles["small-print-wrap"]} ${className ? className : ""} ${
-        variant ? styles[variant] : ""}`} aria-label={`${smallPrintData.ariaLabel}`}>
+        variant ? styles[variant] : ""}`}>
         <div className={styles["small-print__inner"]}>
           <Logo className={`${styles["small-print__logo"]}`} />
           <small className={`${styles["small-print"]}`}>

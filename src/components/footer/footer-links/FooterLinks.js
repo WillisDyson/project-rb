@@ -1,10 +1,10 @@
 import styles from "./FooterLinks.module.scss";
 import { legalLinksData, socialLinksData } from "data/footer/footerData";
 
-const FooterLinks = ({ className, variant, ariaLabel }) => {
+const FooterLinks = ({ className, variant }) => {
   return (
     <div className={`${styles["footer-links"]} ${className ? className : ""} ${
-        variant ? styles[variant] : ""}`} aria-label={`${socialLinksData.ariaLabel}`}>
+        variant ? styles[variant] : ""}`}>
       <div className={styles["footer-links__inner"]}>
         <div className={styles["footer-links__column"]}>
           <h2 className={styles["footer-links__header"]}>{legalLinksData.headerText}</h2>
@@ -22,7 +22,7 @@ const FooterLinks = ({ className, variant, ariaLabel }) => {
             {socialLinksData.links.map((link) => (
               <li key={`${link.href}-${link.alt}`} className={styles["footer-links__item"]}>
                 <a href={link.href} className={styles["footer-links__link"]}>
-                  <img className={styles["footer-links__logo"]} src={link.imageUrl} alt={link.alt} />
+                  <img className={styles["footer-links__logo"]} src={link.imageUrl} alt={link.alt} title={link.title} />
                 </a>
               </li>
             ))}

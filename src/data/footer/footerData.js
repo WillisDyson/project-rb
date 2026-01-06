@@ -19,16 +19,14 @@ export const legalLinksData = {
 
 export const socialLinksData = {
   headerText: "Find us on social media",
-  ariaLabel: "Footer links",
   links: [
-    { imageUrl: facebookLogo, href: "#", alt: "Facebook" },
-    { imageUrl: xLogo, href: "#", alt: "X" },
-    { imageUrl: linkedInLogo, href: "#", alt: "LinkedIn" },
+    { imageUrl: facebookLogo, href: "#", alt: "Facebook", title: "Facebook" },
+    { imageUrl: xLogo, href: "#", alt: "X", title: "X" },
+    { imageUrl: linkedInLogo, href: "#", alt: "LinkedIn", title: "LinkedIn" },
   ],
 };
 
 export const smallPrintData = {
-  ariaLabel: "Legal information",
   text: [
       "© 2025 Rolling Block Ltd – Registered in England & Wales – All rights reserved.",
       "Company No. XXXXXXXX",
