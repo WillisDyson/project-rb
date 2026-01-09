@@ -5,6 +5,9 @@
 @use "GlobalFunctions.scss" as *;
 @use "GlobalVariables.scss" as *;
 
+
+// General styles
+
 * {
     margin: 0;
 }
@@ -28,13 +31,14 @@ h6 {
 }
 
 h1 {
+    line-height: 1.4;
     font-size: px-to-rem(44px);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h2 {
     font-size: px-to-rem(34px);
-    font-weight: 800;
+    font-weight: 900;
 }
 
 h3 {
@@ -49,5 +53,44 @@ p {
 
 em {
     font-style: normal;
-    font-weight: 800;
+    font-weight: 900;
+}
+
+
+// Font size responsiveness
+
+@media (max-width: $large-width) or (max-height: $large-height) {
+    h1 {
+        font-size: px-to-rem(36px);
+    }
+
+    h2 {
+        font-size: px-to-rem(28px);
+    }
+
+    h3 {
+        font-size: px-to-rem(20px);
+    }
+
+    p {
+        font-size: px-to-rem(16px);
+    }
+}
+
+@media (max-width: $small-width) or (max-height: $small-height) {
+    h1 {
+        font-size: px-to-rem(30px);
+    }
+
+    h2 {
+        font-size: px-to-rem(24px);
+    }
+
+    h3 {
+        font-size: px-to-rem(18px);
+    }
+
+    p {
+        font-size: px-to-rem(16px);
+    }
 }

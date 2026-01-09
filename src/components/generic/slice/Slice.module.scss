@@ -1,8 +1,17 @@
 @use "global-stylesheets/GlobalColours.scss" as *;
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
 
 .slice {
     background-color: transparent;
     padding: 100px 25px;
+
+    @media (max-width: $large-width) or (max-height: $large-height) {
+        padding: 75px 25px;
+    }
+
+    @media (max-width: $medium-width) {
+        padding: 50px 25px;
+    }
     
     &--alt {
         background-color: $transparent-white;
@@ -11,6 +20,14 @@
     &--insert {
         background-color: $transparent-white;
         padding: 60px 25px;
+
+        @media (max-width: $medium-width) or (max-height: $medium-height) {
+            padding: 45px 25px;
+        }
+    
+        @media (max-width: $small-width) or (max-height: $small-height) {
+            padding: 30px 25px;
+        }
     }
     
     &__inner {
@@ -18,21 +35,29 @@
         max-width: 1268px;
 
         & > h2 {
-                align-items: center;
-                display: flex;
-                margin-bottom: 60px;
-        
-                &::before {
-                    background-color: $salmon-red;
-                    border-radius: 2px;
-                    content: "";
-                    display: inline-block;
-                    height: 36px;
-                    margin-right: 26px;
-                    position: relative;
-                    top: 2px;
-                    width: 8px;
-                }
+            align-items: center;
+            display: flex;
+            margin-bottom: 60px;
+
+            @media (max-width: $large-width) or (max-height: $large-height) {
+                margin-bottom: 45px;
+            }
+            
+            @media (max-width: $medium-width) or (max-height: $medium-height) {
+                margin-bottom: 35px;
+            }
+    
+            &::before {
+                background-color: $salmon-red;
+                border-radius: 2px;
+                content: "";
+                display: inline-block;
+                height: 36px;
+                margin-right: 26px;
+                position: relative;
+                top: 2px;
+                width: 8px;
             }
         }
+    }
 }

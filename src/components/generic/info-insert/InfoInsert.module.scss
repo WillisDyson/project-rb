@@ -1,5 +1,6 @@
 @use "global-stylesheets/GlobalColours.scss" as *;
 @use "global-stylesheets/GlobalFunctions.scss" as *;
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
 
 .info-insert {
     align-items: center;
@@ -10,15 +11,27 @@
     max-width: 836px;
     text-align: center;
 
+    @media (max-width: $small-width) {
+        gap: 28px;
+    }
+
     &__header-text {
         color: $salmon-red;
         font-size: px-to-rem(24px);
         font-weight: 800;
+
+        @media (max-width: $small-width) {
+            font-size: px-to-rem(18px);
+        }
     }
 
     &__main-text {
         font-size: px-to-rem(34px);
         font-weight: 800;
         line-height: 1.2;
+
+        @media (max-width: $small-width) {
+            font-size: px-to-rem(24px);
+        }
     }
 }

@@ -9,11 +9,11 @@
     &--4-col {
         grid-template-columns: 25% 25% 25% 25%;
 
-        @media (max-width: $medium-screen) {
+        @media (max-width: $medium-width) {
             grid-template-columns: 50% 50%;
         }
 
-        @media (max-width: $small-screen) {
+        @media (max-width: $small-width) {
             grid-template-columns: 100%;
         }
 }
@@ -21,7 +21,7 @@
     &--3-col {
         grid-template-columns: 33.33% 33.33% 33.33%;
 
-        @media (max-width: $medium-screen) {
+        @media (max-width: $medium-width) {
             grid-template-columns: 100%;
         }
     }
@@ -29,7 +29,7 @@
     &--2-col {
         grid-template-columns: 50% 50%;
 
-        @media (max-width: $small-screen) {
+        @media (max-width: $small-width) {
             grid-template-columns: 100%;
         }
     }
@@ -55,7 +55,7 @@
             }
 
             &:first-child, &:last-child {
-                @media (max-width: $medium-screen) {
+                @media (max-width: $medium-width) {
                     top: unset;
                     transform: unset;
                 }
@@ -71,7 +71,7 @@
                 transform: rotate(2deg);
             }
 
-            @media (max-width: $medium-screen) {
+            @media (max-width: $medium-width) {
                 transform: rotate(-0.5deg);
 
                 &:nth-child(even) {

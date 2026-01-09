@@ -1,4 +1,5 @@
 import styles from "./FooterLinks.module.scss";
+import TextLink from "components/generic/text-link/TextLink";
 import { legalLinksData, socialLinksData } from "data/footer/footerData";
 
 const FooterLinks = ({ className, variant }) => {
@@ -11,7 +12,7 @@ const FooterLinks = ({ className, variant }) => {
           <ul className={`${styles["footer-links__list"]} ${styles["footer-links__list--column"]}`}>
             {legalLinksData.links.map((link) => (
               <li key={`${link.href}-${link.text}`} className={styles["footer-links__item"]}>
-                <a href={link.href} className={styles["footer-links__link"]}>{link.text}</a>
+                <TextLink key={`${link.href}-${link.text}`} text={link.text} href={link.href} />
               </li>
             ))}
           </ul>

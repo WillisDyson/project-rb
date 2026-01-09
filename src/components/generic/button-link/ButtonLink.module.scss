@@ -2,6 +2,7 @@
 @use "global-stylesheets/GlobalFunctions.scss" as *;
 @use "global-stylesheets/GlobalFonts.scss" as *;
 @use "global-stylesheets/GlobalAnimations.scss" as *;
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
 
 $button-outline-thickness: 4px;
 $button-padding-y: 10px;
@@ -78,6 +79,11 @@ $button-padding-x: 34px;
             &::after {
                 opacity: 0.8;
             }
+        }
+
+        @media (max-width: $small-width) {
+            font-size: px-to-rem(18px);
+            padding: calc($button-padding-y * 0.9) calc($button-padding-x * 0.9);
         }
     }
 }
