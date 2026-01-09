@@ -7,18 +7,20 @@
     background-color: transparent;
     display: flex;
     flex-direction: column;
+    height: calc(100dvh - 78px);
     justify-content: center;
     margin: 0 auto;
+    max-height: $small-height;
     max-width: 1242px;
-    padding: 30px 25px 100px;
+    padding: 30px 25px 0;
     text-align: center;
 
     @media (max-width: $large-width) or (max-height: $large-height) {
-        padding: 30px 25px 75px;
+        padding: 30px 25px 0;
     }
 
     @media (max-width: $medium-width) or (max-height: $medium-height) {
-        padding: 30px 25px 50px;
+        padding: 30px 25px 0;
     }
 
     &__title {

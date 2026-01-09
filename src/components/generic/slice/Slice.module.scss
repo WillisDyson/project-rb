@@ -5,8 +5,8 @@
     background-color: transparent;
     padding: 100px 25px;
 
-    @media (max-width: $large-width) or (max-height: $large-height) {
-        padding: 75px 25px;
+    @media (min-width: $very-large-width) and (min-height: $medium-height) {
+        padding: 120px 25px;
     }
 
     @media (max-width: $medium-width) {
