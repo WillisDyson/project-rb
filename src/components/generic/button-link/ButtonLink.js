@@ -5,7 +5,7 @@ const Button = ({ className, text, href, variant, imgUrl, imgAlt }) => {
   return (
     <Link
       to={href}
-      className={`${styles["button"]} ${className ? `${styles[className]}` : ""} ${
+      className={`${styles["button"]} ${className ? className : ""} ${
         variant ? styles[variant] : ""
       }`}
     >
