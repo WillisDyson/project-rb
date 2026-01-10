@@ -33,7 +33,7 @@ $button-padding-x: 34px;
     &--hero {
         border: unset;
         box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.31);
-        font-size: px-to-rem(20px);
+        font-size: px-to-rem(26px);
         padding: $button-padding-y $button-padding-x;
         overflow: hidden;
     
@@ -81,9 +81,19 @@ $button-padding-x: 34px;
             }
         }
 
+        @media (max-width: $medium-width) or (max-height: $medium-height) {
+            font-size: px-to-rem(20px);
+        }
+
         @media (max-width: $small-width) {
             font-size: px-to-rem(18px);
             padding: calc($button-padding-y * 0.9) calc($button-padding-x * 0.9);
+        }
+
+        img {
+            flex-grow: 0;
+            height: 40%;
+            width: auto;
         }
     }
 }

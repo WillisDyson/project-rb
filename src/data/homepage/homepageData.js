@@ -6,8 +6,8 @@ export const heroInfo = {
             We make web accessibility simple, so your services work for
             <em> everyone</em>.
           </>,
-  buttonText: "See more info & pricing",
-  buttonUrl: "#",
+  // buttonText: "See more info & pricing",
+  buttonUrl: "#hero-anchor",
 };
 
 export const whyAccessibility = [
@@ -119,6 +119,6 @@ export const ourServices = [
 
 export const getStarted = {
   headerText: "Have a question, or ready to get started?",
-  buttonText: "See more info & pricing",
+  buttonText: "See pricing & packages",
   buttonUrl: "#",
 };

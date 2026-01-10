@@ -59,7 +59,7 @@ em {
 
 // Font size responsiveness
 
-@media (max-width: $large-width) or (max-height: $large-height) {
+@media (max-width: $medium-width) or (max-height: $medium-height) {
     h1 {
         font-size: px-to-rem(36px);
     }

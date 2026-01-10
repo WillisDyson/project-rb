@@ -3,32 +3,38 @@
 @use 'global-stylesheets/GlobalBreakpoints.scss' as *;
 
 .hero {
-    align-items: center;
+    align-self: center;
     background-color: transparent;
     display: flex;
-    flex-direction: column;
-    height: calc(100dvh - 78px);
+    height: calc(85dvh - 78px);
     justify-content: center;
     margin: 0 auto;
-    max-height: $small-height;
-    max-width: 1242px;
-    padding: 30px 25px 0;
+    // max-height: $small-height;
+    // padding: 30px 25px 0;
     text-align: center;
 
-    @media (max-width: $large-width) or (max-height: $large-height) {
-        padding: 30px 25px 0;
-    }
+    // @media (max-width: $large-width) or (max-height: $large-height) {
+    //     padding: 30px 25px 0;
+    // }
 
-    @media (max-width: $medium-width) or (max-height: $medium-height) {
-        padding: 30px 25px 0;
+    // @media (max-width: $medium-width) or (max-height: $medium-height) {
+    //     padding: 30px 25px 0;
+    // }
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 17.5dvh;
     }
 
     &__title {
-        margin: 40px auto 75px;
+        margin: 150px auto 75px;
         max-width: 728px;
 
         @media (max-width: $large-width) or (max-height: $large-height) {
-            margin: 30px auto 60px;
+            margin: 120px auto 60px;
         }
     
         @media (max-width: $medium-width) or (max-height: $medium-height) {

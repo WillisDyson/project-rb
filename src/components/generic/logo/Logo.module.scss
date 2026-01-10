@@ -1,10 +1,17 @@
-$logo-left-padding: 55px;
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
 
 .logo {
-    height: 113px;
+    height: auto;
+    padding-left: 55px;
     width: 144px;
 
     &--hero {
-        padding-left: $logo-left-padding;
+        height: auto;
+        padding-left: 70px;
+        width: 180px;
+
+        @media (max-width: $medium-width) or (max-height: $medium-height) {
+            width: 180px;
+        }
     }
 }
