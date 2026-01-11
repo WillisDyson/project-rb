@@ -3,10 +3,10 @@
 @use "global-stylesheets/GlobalVariables.scss" as *;
 
 .tile {
-    background-color: $dark-cherry-red;
-    border: 2px solid $salmon-red;
+    background-color: var(--bg-primary-red);
+    border: 2px solid var(--border-primary-red);
     border-radius: $global-border-radius;
-    box-shadow: $global-box-shadow;
+    box-shadow: var(--shadow-primary);
     box-sizing: border-box;
     color: var(--text-secondary-red);
     display: flex;
@@ -15,8 +15,8 @@
     padding: 20px 24px 24px;
 
     &--blue {
-        background-color: $orbit-blue;
-        border-color: $royal-blue;
+        background-color: var(--bg-primary-blue);
+        border-color: var(--border-primary-blue);
         color: var(--text-secondary-blue);
     }
 

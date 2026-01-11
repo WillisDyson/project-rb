@@ -9,6 +9,7 @@
 // Theme styles
 
 :root {
+    // Text
     --text-primary: #{$white};
     --text-primary-inverse: #{$midnight-black};
     --text-primary-red: #{$salmon-red};
@@ -17,16 +18,46 @@
     --text-secondary: #{$off-white};
     --text-secondary-blue: #{$pale-blue};
     --text-secondary-red: #{$pale-red};
+
+    // Backgrounds
+    --bg-primary: #{$space-gradient};
+    --bg-primary-blue: #{$ocean-blue};
+    --bg-primary-red: #{$dark-cherry-red};
+
+    --bg-secondary: #{$muted-blue};
+
+    // Shadows
+    --shadow-primary: 2px 3px 15px rgba(0, 0, 0, 0.32);
+
+    // Borders
+    --border-primary-blue: #{$royal-blue};
+    --border-primary-red: #{$salmon-red};
 }
 
 @media (prefers-color-scheme: light) {
     :root {
+        // Text
         --text-primary: #{$midnight-black};
         --text-primary-inverse: #{$white};
+        --text-primary-red: #{$crimson-red};
 
         --text-secondary: #{$midnight-black};
         --text-secondary-blue: #{$ocean-blue};
         --text-secondary-red: #{$dark-cherry-red};
+
+        // Backgrounds
+        --bg-primary: #{$party-gradient};
+        --bg-primary-blue: #{$very-pale-blue};
+        --bg-primary-red: #{$very-pale-red};
+
+        --bg-secondary: #{$baby-blue};
+
+        // Shadows
+        --shadow-primary: 2px 3px 15px rgba(0, 0, 0, 0.1);
+
+        // Borders
+        --border-primary-blue: #{$mid-blue};
+        --border-primary-red: #{$salmon-red};
     }
 }
 
@@ -38,15 +69,10 @@
 
 body {
     background: $orbit-black;
-    background: $space-gradient;
+    background: var(--bg-primary);
     color: var(--text-primary);
     font-family: $houschka;
     font-weight: 400;
-
-    @media (prefers-color-scheme: light) {
-        background: $white;
-        background: $party-gradient;
-    }
 }
 
 h1,

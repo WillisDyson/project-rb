@@ -14,7 +14,7 @@
     }
 
     &--insert {
-        background-color: $transparent-white;
+        background-color: var(--bg-secondary);
         margin: 80px auto;
         padding: 60px 25px;
 

@@ -4,10 +4,10 @@
 
 .cta-tile {
     align-items: center;
-    background-color: $dark-cherry-red;
+    background-color: var(--bg-primary-red);
     border: 2px solid $salmon-red;
     border-radius: $global-border-radius;
-    box-shadow: $global-box-shadow;
+    box-shadow: var(--shadow-primary);
     box-sizing: border-box;
     color: var(--text-primary);
     display: flex;
@@ -19,12 +19,4 @@
     position: relative;
     text-align: center;
     z-index: 1;
-
-    &__header {
-
-    }
-
-    &__button {
-
-    }
 }
