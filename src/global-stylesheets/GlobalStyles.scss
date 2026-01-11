@@ -6,6 +6,30 @@
 @use "GlobalVariables.scss" as *;
 
 
+// Theme styles
+
+:root {
+    --text-primary: #{$white};
+    --text-primary-inverse: #{$midnight-black};
+    --text-primary-red: #{$salmon-red};
+    --text-primary-blue: #{$royal-blue};
+    
+    --text-secondary: #{$off-white};
+    --text-secondary-blue: #{$pale-blue};
+    --text-secondary-red: #{$pale-red};
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text-primary: #{$midnight-black};
+        --text-primary-inverse: #{$white};
+
+        --text-secondary: #{$midnight-black};
+        --text-secondary-blue: #{$ocean-blue};
+        --text-secondary-red: #{$dark-cherry-red};
+    }
+}
+
 // General styles
 
 * {
@@ -15,9 +39,14 @@
 body {
     background: $orbit-black;
     background: $space-gradient;
-    color: $white;
+    color: var(--text-primary);
     font-family: $houschka;
     font-weight: 400;
+
+    @media (prefers-color-scheme: light) {
+        background: $white;
+        background: $party-gradient;
+    }
 }
 
 h1,

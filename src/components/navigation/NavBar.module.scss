@@ -3,8 +3,8 @@
 
 .nav {
     align-items: flex-start;
-    color: $white;
     background-color: transparent;
+    color: var(--text-primary);
     display: flex;
     font-size: px-to-rem(18px);
     justify-content: flex-end;

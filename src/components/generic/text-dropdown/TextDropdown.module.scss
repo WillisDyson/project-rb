@@ -13,7 +13,7 @@
 
     &:focus-within,
     &:hover {
-        color: $pale-red;
+        color: var(--text-secondary-red);
 
         .dropdown__arrow {
             transform: rotate(180deg);

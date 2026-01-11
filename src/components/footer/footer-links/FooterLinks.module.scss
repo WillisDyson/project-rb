@@ -37,7 +37,7 @@
     }
 
     &__link {
-        color: $white;
+        color: var(--text-primary);
         display: block;
         font-size: px-to-rem(12px);
         font-weight: 600;

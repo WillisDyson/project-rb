@@ -16,7 +16,7 @@
     }
 
     &__header-text {
-        color: $salmon-red;
+        color: var(--text-primary-red);
         font-size: px-to-rem(24px);
         font-weight: 800;
 

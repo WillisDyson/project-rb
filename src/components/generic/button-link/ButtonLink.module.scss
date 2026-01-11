@@ -13,7 +13,7 @@ $button-padding-x: 34px;
     border: $button-outline-thickness solid $white;
     border-radius: 999px;
     border-width: 2px;
-    color: $white;
+    color: var(--text-primary);
     display: inline-block;
     font-size: px-to-rem(16px);
     font-family: $houschka;
@@ -27,7 +27,7 @@ $button-padding-x: 34px;
 
     &:hover {
         background-color: $white;
-        color: $midnight-blue;
+        color: var(--text-primary-inverse);
     }
 
     &--hero {

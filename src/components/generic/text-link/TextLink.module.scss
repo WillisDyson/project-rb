@@ -3,14 +3,14 @@
 
 .link {
     align-items: center;
-    color: $white;
+    color: var(--text-primary);
     font-weight: 400;
     padding: 2px 4px;
     text-decoration: none;
     user-select: none;
 
     &:hover {
-        color: $pale-red;
+        color: var(--text-secondary-red);
         cursor: pointer;
     }
 
@@ -20,14 +20,13 @@
     }
 
     &--hero {
-        border-bottom: 1px solid $crimson-red;
-        color: $crimson-red;
+        border-bottom: 1px solid var(--text-primary-red);
         font-size: px-to-rem(20px);
         padding: 0;
 
         &:hover {
             border-color: $midnight-black;
-            color: $midnight-black;
+            color: var(--text-primary-inverse);
         }
     }
 

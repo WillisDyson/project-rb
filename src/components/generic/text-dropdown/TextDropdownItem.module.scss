@@ -5,7 +5,7 @@
 
     a {
         align-items: center;
-        color: $midnight-black;
+        color: var(--text-primary-inverse);
         display: flex;
         padding: 10px 20px;
         text-decoration: none;
@@ -13,7 +13,7 @@
         &:hover,
         &:focus-visible {
             background-color: $off-white;
-            color: $crimson-red;
+            color: var(--text-primary);
             outline: none
         }
     }

@@ -8,7 +8,7 @@
     border-radius: $global-border-radius;
     box-shadow: $global-box-shadow;
     box-sizing: border-box;
-    color: $pale-red;
+    color: var(--text-secondary-red);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -17,7 +17,7 @@
     &--blue {
         background-color: $orbit-blue;
         border-color: $royal-blue;
-        color: $pale-blue;
+        color: var(--text-secondary-blue);
     }
 
     &--stacked-content {
@@ -34,7 +34,7 @@
 
     &__header-wrap {
         align-items: center;
-        color: $white;
+        color: var(--text-primary);
         display: flex;
         gap: 20px;
         margin-bottom: 16px;
