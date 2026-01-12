@@ -11,7 +11,7 @@ const NavBar = () => {
 
   return (
     <nav className={styles.nav}>
-      {location.pathname !== "/" && <Logo href="/" />}
+      {location.pathname !== "/" && <Logo className={styles.nav__logo} href="/" />}
       {navDropdownData.map((dropdown) => (
         <TextDropdown
           key={dropdown.text}

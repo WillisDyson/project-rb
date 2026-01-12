@@ -11,12 +11,14 @@
         text-align: center;
 
         &::before {
-            background-color: $crimson-red;
-            content: "";
-            display: block;
-            height: 5px;
-            margin: 0 auto 25px;
-            width: 37px;
+                background-color: var(--border-primary-red);
+                border-radius: 2px;
+                content: "";
+                display: block;
+                height: 5px;
+                position: relative;
+                margin: 0 auto 25px;
+                width: 37px;
         }
     }
 
