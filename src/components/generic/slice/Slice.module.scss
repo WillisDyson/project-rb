@@ -46,7 +46,7 @@
             }
     
             &::before {
-                background-color: $salmon-red;
+                background-color: var(--border-primary-red);
                 border-radius: 2px;
                 content: "";
                 display: inline-block;

@@ -20,11 +20,14 @@
     --text-secondary-red: #{$pale-red};
 
     // Backgrounds
-    --bg-primary: #{$space-gradient};
+    --bg-primary: #{$charcoal-black};
     --bg-primary-blue: #{$ocean-blue};
     --bg-primary-red: #{$dark-cherry-red};
+    --bg-primary-gradient: #{$space-gradient};
 
     --bg-secondary: #{$muted-blue};
+
+    --bg-tertiary: #{$midnight-black};
 
     // Shadows
     --shadow-primary: 2px 3px 15px rgba(0, 0, 0, 0.32);
@@ -46,18 +49,21 @@
         --text-secondary-red: #{$dark-cherry-red};
 
         // Backgrounds
-        --bg-primary: #{$party-gradient};
+        --bg-primary: #{$white};
         --bg-primary-blue: #{$very-pale-blue};
         --bg-primary-red: #{$very-pale-red};
+        --bg-primary-gradient: #{$party-gradient};
 
         --bg-secondary: #{$baby-blue};
+
+        --bg-tertiary: #{$ash-grey};
 
         // Shadows
         --shadow-primary: 2px 3px 15px rgba(0, 0, 0, 0.1);
 
         // Borders
         --border-primary-blue: #{$mid-blue};
-        --border-primary-red: #{$salmon-red};
+        --border-primary-red: #{$crimson-red};
     }
 }
 
@@ -68,8 +74,8 @@
 }
 
 body {
-    background: $orbit-black;
     background: var(--bg-primary);
+    background: var(--bg-primary-gradient);
     color: var(--text-primary);
     font-family: $houschka;
     font-weight: 400;

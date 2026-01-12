@@ -5,7 +5,7 @@
 .cta-tile {
     align-items: center;
     background-color: var(--bg-primary-red);
-    border: 2px solid $salmon-red;
+    border: 2px solid var(--border-primary-red);
     border-radius: $global-border-radius;
     box-shadow: var(--shadow-primary);
     box-sizing: border-box;

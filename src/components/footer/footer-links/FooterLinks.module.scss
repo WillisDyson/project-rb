@@ -2,7 +2,7 @@
 @use 'global-stylesheets/GlobalFunctions.scss' as *;
 
 .footer-links {
-    background-color: $charcoal-black;
+    background-color: var(--bg-primary);
     padding: 50px 20px;
 
     &__inner {

@@ -3,7 +3,7 @@
 
 .small-print-wrap {
     align-items: center;
-    background-color: $charcoal-black;
+    background-color: var(--bg-primary);
     display: flex;
     flex-direction: column;
     padding: 0 20px 50px;
@@ -32,6 +32,7 @@
         margin-bottom: 24px;
         height: unset;
         margin-left: 38px;
+        padding: 0;
         width: 76px;
     }
 

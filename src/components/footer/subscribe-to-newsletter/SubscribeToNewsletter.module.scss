@@ -3,7 +3,7 @@
 
 .subscribe-to-newsletter {
     align-items: center;
-    background-color: $black;
+    background-color: var(--bg-tertiary);
     display: flex;
     flex-direction: column;
     gap: 24px;
