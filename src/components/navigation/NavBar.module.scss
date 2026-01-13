@@ -2,16 +2,18 @@
 @use "global-stylesheets/GlobalFunctions.scss" as *;
 
 .nav {
-    align-items: flex-start;
+    align-items: center;
     background-color: transparent;
     color: var(--text-primary);
     display: flex;
     font-size: px-to-rem(18px);
+    height: 70px;
     justify-content: flex-end;
-    padding: 26px 33px;
+    padding: 0 30px;
 
     &__logo {
         margin-right: auto;
+        padding: 0 59px 0 0;
     }
 
     a {
