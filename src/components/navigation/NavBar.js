@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./NavBar.module.scss";
 import TextDropdown from "../generic/text-dropdown/TextDropdown";
 import TextLink from "../generic/text-link/TextLink";
@@ -11,7 +11,7 @@ const NavBar = () => {
 
   return (
     <nav className={styles.nav}>
-      {location.pathname !== "/" && <Logo className={styles.nav__logo} href="/" />}
+      {location.pathname !== "/" && <Link to="/"><Logo className={styles.nav__logo} /></Link>}
       {navDropdownData.map((dropdown) => (
         <TextDropdown
           key={dropdown.text}
