@@ -17,7 +17,7 @@ const Homepage = () => {
         buttonText={<>{heroInfo.buttonText}</>}
         buttonUrl={heroInfo.buttonUrl}
       />
-      <Slice headerText={<>Why invest in Web Accessibility?</>} id="hero-anchor">
+      <Slice headerText={<>Why invest in Web Accessibility?</>}>
         <TilesGrid noOfColumns={2}>
           {whyAccessibility.map((tile, idx) => (
             <Tile
