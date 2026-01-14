@@ -11,7 +11,8 @@
         width: 180px;
 
         @media (max-width: $medium-width) or (max-height: $medium-height) {
-            width: 180px;
+            padding-left: 50px;
+            width: 150px;
         }
     }
 }

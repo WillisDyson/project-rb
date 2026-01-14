@@ -31,7 +31,7 @@ const Homepage = () => {
         </TilesGrid>
       </Slice>
       <Slice
-        headerText={<>How other businesses are benefitting</>}
+        headerText={<>Other businesses are already benefitting</>}
       >
         <ArticleSection variant="tiles-grid--tilted-ends">
           {helpingOtherBusinesses.map((article, idx) => (

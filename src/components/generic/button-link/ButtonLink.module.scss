@@ -14,7 +14,7 @@ $button-padding-x: 34px;
     border-radius: 999px;
     border-width: 2px;
     color: var(--text-primary);
-    display: inline-block;
+    display: inline-flex;
     font-size: px-to-rem(16px);
     font-family: $houschka;
     font-weight: 700;
@@ -24,10 +24,16 @@ $button-padding-x: 34px;
     transition: 0.3s;
     user-select: none;
 
-
     &:hover {
         background-color: var(--text-primary);
         color: var(--text-primary-inverse);
+    }
+
+    &__arrow {
+        height: 15.292px;
+        fill: var(--text-primary);
+        padding: 6px 0 6px 15px;
+        width: 12px;
     }
 
     &--hero {

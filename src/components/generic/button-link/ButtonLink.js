@@ -1,7 +1,7 @@
 import styles from "./ButtonLink.module.scss";
 import { Link } from "react-router-dom";
 
-const Button = ({ className, text, href, variant, imgUrl, imgAlt }) => {
+const Button = ({ className, text, href, variant, arrow }) => {
   return (
     <Link
       to={href}
@@ -10,7 +10,11 @@ const Button = ({ className, text, href, variant, imgUrl, imgAlt }) => {
       }`}
     >
       {text && text}
-      {imgUrl && <img src={imgUrl} alt={imgAlt} />}
+      {arrow && 
+      <svg className={styles["button__arrow"]} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 15.292">
+        <path d="M16,8.9,14.943,7.845,10.75,12.03V-.39H9.25V12.03L5.065,7.838,4,8.9l6,6Z" transform="translate(-4 0.39)"/>
+      </svg>
+}
     </Link>
   );
 };

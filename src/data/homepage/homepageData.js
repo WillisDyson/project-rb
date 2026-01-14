@@ -6,7 +6,7 @@ export const heroInfo = {
             We make web accessibility simple, so your services work for
             <em> everyone</em>.
           </>,
-  // buttonText: "See more info & pricing",
+  buttonText: "Everything you need to know",
   buttonUrl: "#hero-anchor",
 };
 
@@ -15,30 +15,30 @@ export const whyAccessibility = [
     imageUrl: whyIcon1,
     header: "1 in 6 people have a disability",
     description:
-      "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
+      "That's nearly 20% of the UK population, which means lots of people could be missing out on using your services.",
   },
   {
-    header: "The law is changing for UK businesses",
+    header: "Legal compliance and risk reduction",
     description:
-      "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
+      "The Equality Act 2010 requires all UK businesses to make reasonable adjustments for people with access needs.",
   },
 ];
 
 export const helpingOtherBusinesses = [
   {
     articleUrl: "#",
-    header: "When does the European Accessibility Act apply to UK businesses?",
+    header: "Rawdon Barber Shop: how we helped them improve their website accessibility",
     description:
-      "Although the European Accessibility Act covers EU businesses, there are some cases where UK businesses must also comply.",
+      "One of the most popular West-Leeds barber shops wanted to make their website accessible to all users.",
     linkText: "Read full case study",
     imageUrl: placeholderArticlePreview,
     imageAlt: "Abc",
   },
   {
     articleUrl: "#",
-    header: "When does the European Accessibility Act apply to UK businesses?",
+    header: "Riverside E-Bikes And Cycles: how we helped them meet accessibility compliance",
     description:
-      "Although the European Accessibility Act covers EU businesses, there are some cases where UK businesses must also comply.",
+      "Numiko, a leading UK tech company, sought to ensure their digital products met all necessary accessibility standards to serve a diverse user base effectively.",
     linkText: "Read full case study",
     imageUrl: placeholderArticlePreview,
     imageAlt: "Abc",

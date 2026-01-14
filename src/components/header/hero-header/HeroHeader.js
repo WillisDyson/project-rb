@@ -16,11 +16,12 @@ const HeroHeader = ({ className, variant, headerText, buttonUrl }) => {
         <Logo variant={"logo--hero"} />
         <h1 className={`${styles.hero__title}`}>{headerText}</h1>
         <ButtonLink
-          variant={"button--hero"}
-          url={buttonUrl}
-          imgUrl={DownArrowImg}
+          arrow={true}
           imgAlt="Down arrow"
-          href={heroInfo.buttonUrl}
+          imgUrl={DownArrowImg}
+          text={heroInfo.buttonText}
+          url={buttonUrl}
+          variant={"button--hero"}
         />
       </div>
     </header>
