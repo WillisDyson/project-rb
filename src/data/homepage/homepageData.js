@@ -18,9 +18,9 @@ export const whyAccessibility = [
       "That's nearly 20% of the UK population, which means lots of people could be missing out on using your services.",
   },
   {
-    header: "Legal compliance and risk reduction",
+    header: "Legal compliance",
     description:
-      "The Equality Act 2010 requires all UK businesses to make reasonable adjustments for people with access needs.",
+      "If your website excludes people with disabilities, you could be breaking the law under the Equality Act 2010.",
   },
 ];
 
