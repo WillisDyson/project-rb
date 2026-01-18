@@ -2,7 +2,7 @@ import Slice from "components/generic/slice/Slice";
 import HeroHeader from "components/header/hero-header/HeroHeader";
 import TilesGrid from "components/generic/tiles-grid/TilesGrid";
 import Tile from "components/generic/tiles-grid/tile/Tile";
-import { whyAccessibility, helpingOtherBusinesses, whatGoodAccessibilityBrings, didYouKnow, whyRollingBlock, heroInfo, getStarted } from "data/homepage/homepageData";
+import { whyAccessibility, helpingOtherBusinesses, didYouKnow, whyRollingBlock, heroInfo, getStarted } from "data/homepage/homepageData";
 import ArticleSection from "components/generic/article-section/ArticleSection";
 import ArticlePromo from "components/generic/article-section/article-promo/ArticlePromo";
 import InfoInsert from "components/generic/info-insert/InfoInsert";
@@ -32,7 +32,7 @@ const Homepage = () => {
         </TilesGrid>
       </Slice>
       <Slice
-        headerText={<>Other businesses are already benefitting</>}
+        headerText={<>How other businesses have benefitted</>}
       >
         <ArticleSection variant="tiles-grid--tilted-ends">
           {helpingOtherBusinesses.map((article, idx) => (
@@ -48,22 +48,6 @@ const Homepage = () => {
             />
           ))}
         </ArticleSection>
-      </Slice>
-      <Slice
-        headerText={<>What good accessibility brings to your business</>}
-      >
-        <TilesGrid variant="tiles-grid--tilted-ends" noOfColumns={3}>
-          {whatGoodAccessibilityBrings.map((tile, idx) => (
-            <Tile
-              key={idx}
-              imageUrl={tile.imageUrl}
-              imageAlt={tile.imageAlt}
-              header={tile.header}
-              description={tile.description}
-              variant="tile--blue"
-            />
-          ))}
-        </TilesGrid>
       </Slice>
       <Slice variant={"slice--insert"}>      
         <InfoInsert variant="tiles-grid--tilted-ends"

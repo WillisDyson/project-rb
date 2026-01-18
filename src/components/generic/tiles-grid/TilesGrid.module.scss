@@ -71,7 +71,7 @@
                 transform: rotate(2deg);
             }
 
-            @media (max-width: $medium-width) {
+            @media (max-width: $large-width) {
                 transform: rotate(-0.5deg);
 
                 &:nth-child(even) {
