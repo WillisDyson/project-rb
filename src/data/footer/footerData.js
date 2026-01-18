@@ -14,6 +14,7 @@ export const legalLinksData = {
     { text: "Terms & Conditions", href: "#"},
     { text: "Privacy Policy", href: "#" },
     { text: "Cookie Policy", href: "#" },
+    { text: "Accessibility Statement", href: "#" }
   ],
 };
 

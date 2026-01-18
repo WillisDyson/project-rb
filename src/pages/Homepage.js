@@ -39,6 +39,7 @@ const Homepage = () => {
             <ArticlePromo
               key={idx}
               articleUrl={article.articleUrl}
+              companyName={article.companyName}
               header={article.header}
               description={article.description}
               imageUrl={article.imageUrl}

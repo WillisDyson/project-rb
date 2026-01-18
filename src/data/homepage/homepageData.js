@@ -30,7 +30,8 @@ export const whyAccessibility = [
 export const helpingOtherBusinesses = [
   {
     articleUrl: "#",
-    header: "Rawdon Barber Shop: how we helped them improve their website accessibility",
+    companyName: "Rawdon Barber Shop",
+    header: "How accessibility helped a small business to take off",
     description:
       "One of the most popular West Leeds barber shops wanted to make their website accessible to all users.",
     linkText: "Read full case study",
@@ -39,7 +40,8 @@ export const helpingOtherBusinesses = [
   },
   {
     articleUrl: "#",
-    header: "Riverside E-Bikes And Cycles: how we helped them meet accessibility compliance",
+    companyName: "Riverside E-Bikes And Cycles",
+    header: "Opening the door to more customers through accessibility",
     description:
       "Riverside E-Bikes And Cycles wanted to ensure their digital products met all necessary accessibility standards to serve a diverse user base effectively.",
     linkText: "Read full case study",

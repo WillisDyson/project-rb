@@ -43,7 +43,12 @@
     }
 
     &__header, &__desc {
+        font-weight: 400;
         margin-bottom: 20px;
+
+        b {
+            font-weight: 800;
+        }
     }
 
     &__desc {

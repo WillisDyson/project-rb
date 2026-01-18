@@ -1,5 +1,6 @@
 @use "global-stylesheets/GlobalColours.scss" as *;
 @use "global-stylesheets/GlobalFunctions.scss" as *;
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
 
 .nav {
     align-items: center;
@@ -10,6 +11,10 @@
     height: 70px;
     justify-content: flex-end;
     padding: 0 30px;
+
+    @media (max-width: $medium-width) or (max-height: $medium-height) {
+        padding: 0 25px;
+    }
 
     &__logo {
         margin-right: auto;
