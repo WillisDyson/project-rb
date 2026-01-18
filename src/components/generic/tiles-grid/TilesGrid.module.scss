@@ -9,7 +9,7 @@
     &--4-col {
         grid-template-columns: 25% 25% 25% 25%;
 
-        @media (max-width: $medium-width) {
+        @media (max-width: $large-width) {
             grid-template-columns: 50% 50%;
         }
 

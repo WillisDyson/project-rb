@@ -11,10 +11,14 @@
     padding: 50px 20px;
 
     &__header {
+        color: var(--text-secondary);
         font-size: px-to-rem(20px);
+        font-weight: 800;
     }
 
     &__button {
+        border-color: var(--text-secondary);
+        color: var(--text-secondary);
         font-size: px-to-rem(16px);
     }
 }

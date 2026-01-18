@@ -1,4 +1,7 @@
-import whyIcon1 from "assets/tiles/why-icon-1.svg";
+import whyIcon1 from "assets/tiles/why-rolling-block/why-rb-icon-1.svg";
+import whyIcon2 from "assets/tiles/why-rolling-block/why-rb-icon-2.svg";
+import whyIcon3 from "assets/tiles/why-rolling-block/why-rb-icon-3.svg";
+import whyIcon4 from "assets/tiles/why-rolling-block/why-rb-icon-4.svg";
 import placeholderArticlePreview from "assets/articles/placeholder-article-preview.png";
 
 export const heroInfo = {
@@ -8,11 +11,11 @@ export const heroInfo = {
           </>,
   buttonText: "Everything you need to know",
   buttonUrl: "#hero-anchor",
+  buttonIconAlt: "Down arrow",
 };
 
 export const whyAccessibility = [
   {
-    imageUrl: whyIcon1,
     header: "1 in 6 people have a disability",
     description:
       "That's nearly 20% of the UK population, which means lots of people could be missing out on using your services.",
@@ -71,22 +74,22 @@ export const whyRollingBlock = [
   {
     imageUrl: whyIcon1,
     header: "People are at the heart of what we do.",
-    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+    description: "Accessibility is nothing without people. Our work is done by humans, for humans, and that will never change.",
   },
   {
-    imageUrl: whyIcon1,
-    header: "People are at the heart of what we do.",
-    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+    imageUrl: whyIcon2,
+    header: "We're far more than just Web Accessibility experts.",
+    description: "All of our work is underpinned by years of Web Development and Design experience.",
   },
   {
-    imageUrl: whyIcon1,
-    header: "People are at the heart of what we do.",
-    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+    imageUrl: whyIcon3,
+    header: "Always affordable, never compromising on quality.",
+    description: "If a service isn't affordable, it isn't accessible. We strive to always provide great value service at a fair price.",
   },
   {
-    imageUrl: whyIcon1,
-    header: "People are at the heart of what we do.",
-    description: "In today's AI world, it's important to remember that accessibility is all about people. Our work is done by humans, for humans.",
+    imageUrl: whyIcon4,
+    header: "Free after-project support, forever.",
+    description: "You can tap into our accessibility knowledge at any point after the project, completely free of charge.",
   }
 ];
 

@@ -6,7 +6,9 @@ const Tile = ({ imageUrl, imageAlt, header, description, variant }) => (
     <div className={`${styles.tile} ${variant ? styles[variant] : ""}`}>
         <div className={styles["tile__header-wrap"]}>
           {imageUrl && (
-            <img src={imageUrl} alt={imageAlt || ""} className={styles.tile__image} />
+            <div className={styles["tile__image-wrap"]}>
+              <img src={imageUrl} alt={imageAlt || ""} className={styles.tile__image} />
+            </div>
           )}
           <h3 className={styles.tile__header}>{header}</h3>
         </div>

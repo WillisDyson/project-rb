@@ -15,9 +15,11 @@
     --text-primary-red: #{$salmon-red};
     --text-primary-blue: #{$royal-blue};
     
-    --text-secondary: #{$off-white};
+    --text-secondary: #{$ash-grey};
     --text-secondary-blue: #{$pale-blue};
     --text-secondary-red: #{$pale-red};
+
+    --text-tertiary: #{$off-white};
 
     // Backgrounds
     --bg-primary: #{$charcoal-black};
@@ -33,8 +35,8 @@
     --shadow-primary: 2px 3px 15px rgba(0, 0, 0, 0.32);
 
     // Borders
-    --border-primary-blue: #{$royal-blue};
-    --border-primary-red: #{$salmon-red};
+    --accent-primary-blue: #{$royal-blue};
+    --accent-primary-red: #{$salmon-red};
 }
 
 @media (prefers-color-scheme: light) {
@@ -47,6 +49,8 @@
         --text-secondary: #{$midnight-black};
         --text-secondary-blue: #{$ocean-blue};
         --text-secondary-red: #{$dark-cherry-red};
+
+        --text-tertiary: #{$midnight-black};
 
         // Backgrounds
         --bg-primary: #{$white};
@@ -62,8 +66,8 @@
         --shadow-primary: 2px 3px 15px rgba(0, 0, 0, 0.1);
 
         // Borders
-        --border-primary-blue: #{$mid-blue};
-        --border-primary-red: #{$crimson-red};
+        --accent-primary-blue: #{$mid-blue};
+        --accent-primary-red: #{$crimson-red};
     }
 }
 
@@ -138,7 +142,7 @@ em {
     }
 }
 
-@media (max-width: $small-width) or (max-height: $small-height) {
+@media (max-width: $small-width) or (max-height: $very-small-height) {
     h1 {
         font-size: px-to-rem(30px);
     }

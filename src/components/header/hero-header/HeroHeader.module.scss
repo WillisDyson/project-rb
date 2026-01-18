@@ -26,20 +26,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 17.5dvh;
+        margin: 17.5dvh 0;
     }
 
     &__title {
         font-weight: 600;
-        margin: 150px auto 75px;
+        margin: 150px auto 180px;
         max-width: 728px;
 
         @media (max-width: $large-width) or (max-height: $large-height) {
-            margin: 120px auto 60px;
+            margin: 120px auto 120px;
         }
     
         @media (max-width: $medium-width) or (max-height: $medium-height) {
-            margin: 40px auto 50px;
+            margin: 40px auto 100px;
         }
     }
 }

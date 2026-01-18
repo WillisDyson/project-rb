@@ -16,6 +16,7 @@ const Homepage = () => {
         headerText={<>{heroInfo.headerText}</>}
         buttonText={<>{heroInfo.buttonText}</>}
         buttonUrl={heroInfo.buttonUrl}
+        buttonIconAlt={heroInfo.buttonIconAlt}
       />
       <Slice headerText={<>Why invest in Web Accessibility?</>}>
         <TilesGrid noOfColumns={2}>
@@ -89,6 +90,7 @@ const Homepage = () => {
       </Slice>
       <Slice
         headerText={<>Our services</>}
+        descriptionText={<>The services we offer typically fall into these categories, however we are always happy to tailor them to your specific needs.</>}
       >
         <TilesGrid noOfColumns={2}>
           {ourServices.map((tile, idx) => (
@@ -102,6 +104,8 @@ const Homepage = () => {
             />
           ))}
         </TilesGrid>
+      </Slice>
+      <Slice>
         <CtaTile
           headerText={<>{getStarted.headerText}</>}
           buttonText={<>{getStarted.buttonText}</>}

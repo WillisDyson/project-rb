@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-  <g id="Group_64" data-name="Group 64" transform="translate(-611 -1245)">
-    <circle id="Ellipse_5" data-name="Ellipse 5" cx="24" cy="24" r="24" transform="translate(611 1245)" fill="#be0001"/>
-    <path id="Icon_material-people" data-name="Icon material-people" d="M20.548,15.089a3.795,3.795,0,1,0-3.81-3.795A3.786,3.786,0,0,0,20.548,15.089Zm-10.159,0a3.795,3.795,0,1,0-3.81-3.795A3.786,3.786,0,0,0,10.389,15.089Zm0,2.53C7.43,17.619,1.5,19.1,1.5,22.046v3.162H19.278V22.046C19.278,19.1,13.348,17.619,10.389,17.619Zm10.159,0c-.368,0-.787.025-1.232.063a5.333,5.333,0,0,1,2.5,4.364v3.162h7.619V22.046C29.437,19.1,23.506,17.619,20.548,17.619Z" transform="translate(619.626 1252.483)" fill="#fff"/>
-  </g>
-</svg>

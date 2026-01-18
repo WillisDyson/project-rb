@@ -49,6 +49,12 @@
     }
 
     &__logo {
+        border: 2px solid transparent;
         border-radius: 4px;
+        transition: 0.18s;
+
+        &:hover {
+            border: 2px solid var(--text-primary);
+        }
     }
 }

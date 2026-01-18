@@ -9,6 +9,7 @@ $button-padding-y: 10px;
 $button-padding-x: 34px;
 
 .button {
+    align-items: center;
     background: transparent;
     border: $button-outline-thickness solid var(--text-primary);
     border-radius: 999px;
@@ -39,6 +40,7 @@ $button-padding-x: 34px;
     &--hero {
         border: unset;
         box-shadow: var(--shadow-primary);
+        flex-shrink: 0;
         font-size: px-to-rem(26px);
         padding: $button-padding-y $button-padding-x;
         overflow: hidden;
