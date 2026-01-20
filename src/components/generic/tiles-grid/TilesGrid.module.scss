@@ -6,6 +6,18 @@
     grid-template-columns: 50% 50%;
     margin: -12.5px;
 
+    &__outer {
+        margin-top: 60px;
+
+        @media (max-width: $large-width) or (max-height: $large-height) {
+            margin-top: 45px;
+        }
+        
+        @media (max-width: $medium-width) or (max-height: $medium-height) {
+            margin-top: 35px;
+        }
+    }
+
     &--4-col {
         grid-template-columns: 25% 25% 25% 25%;
 

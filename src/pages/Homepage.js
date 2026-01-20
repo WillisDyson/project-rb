@@ -74,8 +74,7 @@ const Homepage = () => {
         </TilesGrid>
       </Slice>
       <Slice
-        headerText={<>Our services</>}
-        descriptionText={<>The services we offer typically fall into these categories, however we are always happy to tailor them to your specific needs.</>}
+        headerText={<>How we'll help you get accessible</>}
       >
         <TilesGrid noOfColumns={2}>
           {ourServices.map((tile, idx) => (

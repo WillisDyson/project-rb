@@ -43,15 +43,15 @@
     &__image-wrap {
         align-items: center;
         background-color: var(--accent-primary-red);
-        border-radius: 6px;
+        border-radius: 4px;
         display: flex;
-        height: 42px;
+        height: 30px;
         justify-content: center;
-        width: 42px;
+        width: 30px;
     }
 
     &__image {
-        max-height: 30px;
-        max-width: 30px;
+        max-height: 18px;
+        max-width: 18px;
     }
 }

@@ -98,22 +98,22 @@ export const whyRollingBlock = [
 
 export const ourServices = [
   {
-    header: "Accessibility Compliance audits",
+    header: "Accessibility compliance testing",
+    description: "The best starting point for any accessibility journey. We'll identify accessibility barriers on your website or digital product, and provide you with a clear report on how to fix them.",
+    url: "#",
+  },
+  {
+    header: "Web Design and Development solutions",
     description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
     url: "#",
   },
   {
-    header: "Accessibility Compliance audits",
+    header: "Staff training and workshops",
     description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
     url: "#",
   },
   {
-    header: "Accessibility Compliance audits",
-    description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
-    url: "#",
-  },
-  {
-    header: "Accessibility Compliance audits",
+    header: "On-demand help and advice",
     description: "The best way to determine how accessible your product or service is. With help from real user testers, we'll perform a comprehensive audit against Accessibility standards, identifying the problems and explaining how to fix them.",
     url: "#",
   }

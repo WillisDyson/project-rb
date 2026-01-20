@@ -2,11 +2,21 @@
 @use "global-stylesheets/GlobalColours.scss" as *;
 @use "global-stylesheets/GlobalFunctions.scss" as *;
 @use "global-stylesheets/GlobalVariables.scss" as *;
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
 
 .article-section {
     display: flex;
     flex-direction: column;
     gap: calc($global-tile-gap * 1.5);
+    margin-top: 60px;
+
+    @media (max-width: $large-width) or (max-height: $large-height) {
+        margin-top: 45px;
+    }
+    
+    @media (max-width: $medium-width) or (max-height: $medium-height) {
+        margin-top: 35px;
+    }
 
     &__button {
         align-self: flex-start;

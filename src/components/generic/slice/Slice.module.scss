@@ -31,31 +31,34 @@
     &__inner {
         margin: 0 auto;
         max-width: 1268px;
+    }
 
-        & > h2 {
-            align-items: center;
-            display: flex;
-            margin-bottom: 60px;
+    &__header {
+        align-items: center;
+        display: flex;
 
-            @media (max-width: $large-width) or (max-height: $large-height) {
-                margin-bottom: 45px;
-            }
-            
-            @media (max-width: $medium-width) or (max-height: $medium-height) {
-                margin-bottom: 35px;
-            }
-    
-            &::before {
-                background-color: var(--accent-primary-red);
-                border-radius: 2px;
-                content: "";
-                display: inline-block;
-                height: 34px;
-                margin-right: 26px;
-                position: relative;
-                top: 2px;
-                width: 4px;
-            }
+        &::before {
+            background-color: var(--accent-primary-red);
+            border-radius: 2px;
+            content: "";
+            display: inline-block;
+            height: 34px;
+            margin-right: 26px;
+            position: relative;
+            top: 2px;
+            width: 4px;
+        }
+    }
+
+    &__desc {
+        margin-top: 40px;
+
+        @media (max-width: $large-width) or (max-height: $large-height) {
+            margin-top: 28px;
+        }
+        
+        @media (max-width: $medium-width) or (max-height: $medium-height) {
+            margin-top: 16px;
         }
     }
 }
