@@ -10,8 +10,7 @@ import placeholderArticlePreview from "assets/articles/placeholder-article-previ
 
 export const heroInfo = {
   headerText: <>
-            We make web accessibility simple, so your services work for
-            <em> everyone</em>.
+            Make your services work for <em><span>EVERYONE</span></em> with Rolling Block
           </>,
   buttonText: "Everything you need to know",
   buttonUrl: "#hero-anchor",

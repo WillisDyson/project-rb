@@ -3,12 +3,12 @@
 @use "global-stylesheets/GlobalVariables.scss" as *;
 
 .tile {
-    background-color: var(--bg-primary-red);
-    border: 2px solid var(--accent-primary-red);
+    background-color: var(--bg-primary-green);
+    border: 2px solid var(--accent-primary-green);
     border-radius: $global-border-radius;
     box-shadow: var(--shadow-primary);
     box-sizing: border-box;
-    color: var(--text-secondary-red);
+    color: var(--text-secondary-green);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -42,7 +42,7 @@
 
     &__image-wrap {
         align-items: center;
-        background-color: var(--accent-primary-red);
+        background-color: var(--accent-primary-green);
         border-radius: 4px;
         display: flex;
         height: 30px;

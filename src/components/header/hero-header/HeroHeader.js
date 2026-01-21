@@ -1,8 +1,8 @@
 import styles from "./HeroHeader.module.scss";
 import Logo from "components/generic/logo/Logo";
-import ButtonLink from "components/generic/button-link/ButtonLink";
-import DownArrowImg from "assets/arrow-button/down-arrow-white.svg";
-import { heroInfo } from "data/homepage/homepageData";
+// import ButtonLink from "components/generic/button-link/ButtonLink";
+// import DownArrowImg from "assets/arrow-button/down-arrow-white.svg";
+// import { heroInfo } from "data/homepage/homepageData";
 
 
 const HeroHeader = ({ className, variant, headerText, buttonUrl, buttonIconAlt }) => {
@@ -13,16 +13,16 @@ const HeroHeader = ({ className, variant, headerText, buttonUrl, buttonIconAlt }
       }`}
     >
       <div className={`${styles.hero__inner}`}>
-        <Logo variant={"logo--hero"} />
+        {/* <Logo variant={"logo--hero"} /> */}
         <h1 className={`${styles.hero__title}`}>{headerText}</h1>
-        <ButtonLink
+        {/* <ButtonLink
           arrow={true}
           imgAlt={buttonIconAlt}
           imgUrl={DownArrowImg}
           text={heroInfo.buttonText}
           url={buttonUrl}
           variant={"button--hero"}
-        />
+        /> */}
       </div>
     </header>
   );

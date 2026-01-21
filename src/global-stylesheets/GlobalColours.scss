@@ -1,7 +1,7 @@
 // Dark theme
 
 // Gradients
-$space-gradient: linear-gradient(12deg, rgba(83, 0, 3, 1) 0%, rgba(4, 0, 0, 1) 18%, rgba(2, 23, 45, 1) 44%, rgba(1, 4, 8, 1) 80%, rgba(161, 1, 3, 1) 100%);
+$space-gradient: linear-gradient(12deg, #038C4C 0%, #000000 18%, #000640 44%, #000000 80%, #008C4B 100%);
 $magic-gradient: linear-gradient(45deg, rgba(255, 49, 52, 1) 0%, rgba(33, 69, 250, 1) 100%);
 
 // Reds
@@ -23,6 +23,11 @@ $ocean-blue: #051a34;
 $orbit-blue: #000C20;
 $midnight-blue: #000B33;
 
+// Greens
+$pale-green: #C1D6CD;
+$lime-green: #3ACD88;
+$moss-green: #00180D;
+
 // Blacks
 $black: #000000;
 $charcoal-black: #0C0C0C;
@@ -37,6 +42,7 @@ $stone-grey: #A9A9A9;
 $white: #FFFFFF;
 $off-white: #B4B4B4;
 $transparent-white: rgba(255, 255, 255, 0.05);
+
 
 // ---------------------------------
 

@@ -30,9 +30,9 @@
     }
 
     &__title {
-        font-weight: 600;
+        font-weight: 900;
         margin: 150px auto 180px;
-        max-width: 728px;
+        max-width: 970px;
 
         @media (max-width: $large-width) or (max-height: $large-height) {
             margin: 120px auto 120px;
@@ -40,6 +40,28 @@
     
         @media (max-width: $medium-width) or (max-height: $medium-height) {
             margin: 40px auto 100px;
+        }
+
+        em {
+            align-items: center;
+            background-color: var(--accent-primary-green);
+            border-radius: 5px;
+            color: #00180D;
+            display: inline-flex;
+            gap: 8px;
+            line-height: 1;
+            margin-right: 4px;
+            padding: 3px 16px 8px 8px;
+
+            &::after {
+                background-image: url('../../../assets/hero-header/checkmark-dark.svg');
+                content: '';
+                display: block;
+                height: 26.09px;
+                position: relative;
+                top: 2px;
+                width: 34.99px;
+            }
         }
     }
 }

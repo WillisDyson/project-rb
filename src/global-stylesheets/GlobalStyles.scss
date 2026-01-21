@@ -17,14 +17,14 @@
     
     --text-secondary: #{$ash-grey};
     --text-secondary-blue: #{$pale-blue};
-    --text-secondary-red: #{$pale-red};
+    --text-secondary-green: #{$pale-green};
 
     --text-tertiary: #{$off-white};
 
     // Backgrounds
     --bg-primary: #{$charcoal-black};
     --bg-primary-blue: #{$ocean-blue};
-    --bg-primary-red: #{$dark-cherry-red};
+    --bg-primary-green: #{$moss-green};
     --bg-primary-gradient: #{$space-gradient};
 
     --bg-secondary: #{$muted-blue};
@@ -36,7 +36,7 @@
 
     // Borders
     --accent-primary-blue: #{$royal-blue};
-    --accent-primary-red: #{$salmon-red};
+    --accent-primary-green: #{$lime-green};
 }
 
 @media (prefers-color-scheme: light) {
@@ -48,14 +48,14 @@
 
         --text-secondary: #{$midnight-black};
         --text-secondary-blue: #{$ocean-blue};
-        --text-secondary-red: #{$dark-cherry-red};
+        --text-secondary-green: #{$dark-cherry-red};
 
         --text-tertiary: #{$midnight-black};
 
         // Backgrounds
         --bg-primary: #{$white};
         --bg-primary-blue: #{$very-pale-blue};
-        --bg-primary-red: #{$very-pale-red};
+        --bg-primary-green: #{$very-pale-red};
         --bg-primary-gradient: #{$party-gradient};
 
         --bg-secondary: #{$baby-blue};
@@ -67,7 +67,7 @@
 
         // Borders
         --accent-primary-blue: #{$mid-blue};
-        --accent-primary-red: #{$crimson-red};
+        --accent-primary-green: #{$crimson-red};
     }
 }
 
@@ -96,8 +96,8 @@ h6 {
 }
 
 h1 {
-    line-height: 1.4;
-    font-size: px-to-rem(44px);
+    line-height: 1.5;
+    font-size: px-to-rem(59px);
     font-weight: 900;
 }
 
