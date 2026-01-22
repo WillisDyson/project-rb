@@ -1,7 +1,7 @@
 // Dark theme
 
 // Gradients
-$space-gradient: linear-gradient(12deg, #038C4C 0%, #000000 18%, #000640 44%, #000000 80%, #008C4B 100%);
+$space-gradient: linear-gradient(12deg, #038C4C 0%, #000000 26%, #000640 49%, #000000 80%, #008C4B 100%);
 $magic-gradient: linear-gradient(45deg, rgba(255, 49, 52, 1) 0%, rgba(33, 69, 250, 1) 100%);
 
 // Reds
@@ -51,4 +51,4 @@ $transparent-white: rgba(255, 255, 255, 0.05);
 // Light theme
 
 // Gradients
-$party-gradient: linear-gradient(12deg, #038C4C 0%, #000000 26%, #000640 49%, #000000 80%, #008C4B 100%);
+$party-gradient: linear-gradient(12deg, rgb(224 255 226) 0%, rgb(255, 253, 253) 28%, rgb(191, 216, 242) 48%, rgb(255, 255, 255) 82%, rgb(224 255 226) 100%)

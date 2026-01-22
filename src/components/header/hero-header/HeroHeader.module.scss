@@ -1,38 +1,40 @@
+@use 'global-stylesheets/GlobalAnimations.scss' as *;
 @use 'global-stylesheets/GlobalColours.scss' as *;
-@use 'global-stylesheets/GlobalFunctions.scss';
+@use 'global-stylesheets/GlobalFunctions.scss' as *;
 @use 'global-stylesheets/GlobalBreakpoints.scss' as *;
 
 .hero {
+    animation-name: popBackground;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     align-self: center;
-    background-color: transparent;
+    background-image: url('../../../assets/hero-header/hero-background-3.svg');
+    background-size: 1500px;
     display: flex;
     height: calc(85dvh - 78px);
     justify-content: center;
     margin: 0 auto;
-    // max-height: $small-height;
     padding: 0 25px;
     text-align: center;
-
-    // @media (max-width: $large-width) or (max-height: $large-height) {
-    //     padding: 30px 25px 0;
-    // }
-
-    // @media (max-width: $medium-width) or (max-height: $medium-height) {
-    //     padding: 30px 25px 0;
-    // }
+    background-position: 50% 54%;
+    background-repeat: no-repeat;
 
     &__inner {
         align-items: center;
+        animation-name: fadeIn;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 17.5dvh 0;
+        opacity: 0;
     }
 
     &__title {
         font-weight: 900;
         margin: 150px auto 180px;
-        max-width: 970px;
+        max-width: 1250px;
 
         @media (max-width: $large-width) or (max-height: $large-height) {
             margin: 120px auto 120px;
