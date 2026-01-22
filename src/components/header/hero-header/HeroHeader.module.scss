@@ -8,7 +8,7 @@
     animation-duration: 1s;
     animation-fill-mode: forwards;
     align-self: center;
-    background-image: url('../../../assets/hero-header/hero-background-3.svg');
+    background-image: var(--bg-hero);
     background-size: 1500px;
     display: flex;
     height: calc(85dvh - 78px);

@@ -31,6 +31,8 @@
 
     --bg-tertiary: #{$black};
 
+    --bg-hero: url('../assets/hero-header/hero-background-3.svg');
+
     // Shadows
     --shadow-primary: 2px 3px 15px rgba(0, 0, 0, 0.32);
 
@@ -57,6 +59,8 @@
         --bg-primary-blue: #{$very-pale-blue};
         --bg-primary-green: #{$very-pale-green};
         --bg-primary-gradient: #{$party-gradient};
+
+        --bg-hero: url('../assets/hero-header/hero-background-3--dark.svg');
 
         --bg-secondary: #{$baby-blue};
 
