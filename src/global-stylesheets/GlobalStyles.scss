@@ -12,7 +12,7 @@
     // Text
     --text-primary: #{$white};
     --text-primary-inverse: #{$midnight-black};
-    --text-primary-red: #{$salmon-red};
+    --text-primary-green: #{$salmon-red};
     --text-primary-blue: #{$royal-blue};
     
     --text-secondary: #{$ash-grey};
@@ -27,7 +27,7 @@
     --bg-primary-green: #{$moss-green};
     --bg-primary-gradient: #{$space-gradient};
 
-    --bg-secondary: #{$muted-blue};
+    --bg-secondary: #{$orbit-blue};
 
     --bg-tertiary: #{$black};
 
@@ -44,18 +44,18 @@
         // Text
         --text-primary: #{$midnight-black};
         --text-primary-inverse: #{$white};
-        --text-primary-red: #{$crimson-red};
+        --text-primary-green: #{$leaf-green};
 
         --text-secondary: #{$midnight-black};
         --text-secondary-blue: #{$ocean-blue};
-        --text-secondary-green: #{$dark-cherry-red};
+        --text-secondary-green: #{$leaf-green};
 
         --text-tertiary: #{$midnight-black};
 
         // Backgrounds
         --bg-primary: #{$white};
         --bg-primary-blue: #{$very-pale-blue};
-        --bg-primary-green: #{$very-pale-red};
+        --bg-primary-green: #{$very-pale-green};
         --bg-primary-gradient: #{$party-gradient};
 
         --bg-secondary: #{$baby-blue};
@@ -67,7 +67,7 @@
 
         // Borders
         --accent-primary-blue: #{$mid-blue};
-        --accent-primary-green: #{$crimson-red};
+        --accent-primary-green: #{$leaf-green};
     }
 }
 

@@ -33,6 +33,7 @@ const Homepage = () => {
       </Slice>
       <Slice
         headerText={<>How other businesses have benefitted</>}
+        colour="blue"
       >
         <ArticleSection variant="tiles-grid--tilted-ends">
           {helpingOtherBusinesses.map((article, idx) => (
@@ -59,6 +60,7 @@ const Homepage = () => {
       </Slice>
       <Slice
         headerText={<>Why choose Rolling Block?</>}
+        colour="blue"
       >
         <TilesGrid noOfColumns={4} variant="tiles-grid--tilted-alternate">
           {whyRollingBlock.map((tile, idx) => (
@@ -69,6 +71,7 @@ const Homepage = () => {
               header={tile.header}
               description={tile.description}
               variant="tile--stacked-content"
+              colour="blue"
             />
           ))}
         </TilesGrid>
@@ -84,7 +87,6 @@ const Homepage = () => {
               imageAlt={tile.imageAlt}
               header={tile.header}
               description={tile.description}
-              variant="tile--blue"
             />
           ))}
         </TilesGrid>
@@ -93,8 +95,7 @@ const Homepage = () => {
         <CtaTile
           headerText={<>{getStarted.headerText}</>}
           buttonText={<>{getStarted.buttonText}</>}
-          buttonUrl={getStarted.buttonUrl}>
-        </CtaTile>
+          buttonUrl={getStarted.buttonUrl}/>
       </Slice>
     </>
   );

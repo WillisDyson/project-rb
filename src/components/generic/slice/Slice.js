@@ -1,11 +1,11 @@
 import styles from "./Slice.module.scss";
 
-const Slice = ({ className, headerText, descriptionText, variant, children, id }) => {
+const Slice = ({ className, headerText, descriptionText, variant, children, id, colour }) => {
   return (
     <section
-      className={`${styles["slice"]} ${className ? className : ""} ${
+      className={`${styles["slice"]} ${className ? className : ""}  ${
         variant ? styles[variant] : ""
-      }`}
+      } ${colour ? styles[`slice--${colour}`] : ""}`}
     >
       <div id={id} className={styles["slice__inner"]}>
         {headerText && <h2 className={styles["slice__header"]}>{headerText}</h2>}

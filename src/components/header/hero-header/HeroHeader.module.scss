@@ -46,12 +46,12 @@
             align-items: center;
             background-color: var(--accent-primary-green);
             border-radius: 5px;
-            color: #00180D;
+            color: var(--text-primary-inverse);
             display: inline-flex;
             gap: 8px;
             line-height: 1;
             margin-right: 4px;
-            padding: 3px 16px 8px 8px;
+            padding: 3px 16px 10px 14px;
 
             &::after {
                 background-image: url('../../../assets/hero-header/checkmark-dark.svg');

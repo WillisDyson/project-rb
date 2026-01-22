@@ -8,24 +8,11 @@
     border-radius: $global-border-radius;
     box-shadow: var(--shadow-primary);
     box-sizing: border-box;
-    color: var(--text-secondary-green);
+    color: var(--text-tertiary);
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 20px 24px 24px;
-
-    &--blue {
-        background-color: var(--bg-primary-blue);
-        border-color: var(--accent-primary-blue);
-        color: var(--text-secondary-blue);
-    }
-
-    &--stacked-content {
-        .tile__header-wrap {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
 
     &__outer {
         padding: calc($global-tile-gap / 2);
@@ -53,5 +40,22 @@
     &__image {
         max-height: 18px;
         max-width: 18px;
+    }
+
+    &--blue {
+        background-color: var(--bg-primary-blue);
+        border-color: var(--accent-primary-blue);
+        color: var(--text-secondary-blue);
+
+        .tile__image-wrap {
+            background-color: var(--accent-primary-blue);
+        }
+    }
+
+    &--stacked-content {
+        .tile__header-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 }

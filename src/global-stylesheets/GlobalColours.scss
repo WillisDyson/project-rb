@@ -24,8 +24,10 @@ $orbit-blue: #000C20;
 $midnight-blue: #000B33;
 
 // Greens
+$very-pale-green: #F5FFFB;
 $pale-green: #C1D6CD;
 $lime-green: #3ACD88;
+$leaf-green: #079d60;
 $moss-green: #00180D;
 
 // Blacks
@@ -49,4 +51,4 @@ $transparent-white: rgba(255, 255, 255, 0.05);
 // Light theme
 
 // Gradients
-$party-gradient: linear-gradient(12deg, rgba(255, 238, 238, 1) 0%, rgba(255, 253, 253, 1) 18%, rgba(191, 216, 242, 1) 44%, rgba(255, 255, 255, 1) 82%, rgba(255, 218, 219, 1) 100%);
+$party-gradient: linear-gradient(12deg, #038C4C 0%, #000000 26%, #000640 49%, #000000 80%, #008C4B 100%);
