@@ -9,6 +9,8 @@
     animation-fill-mode: forwards;
     align-self: center;
     background-image: var(--bg-hero);
+    background-position: 50% 54%;
+    background-repeat: no-repeat;
     background-size: 1500px;
     display: flex;
     height: calc(85dvh - 78px);
@@ -16,8 +18,11 @@
     margin: 0 auto;
     padding: 0 25px;
     text-align: center;
-    background-position: 50% 54%;
-    background-repeat: no-repeat;
+
+    @media (max-width: $medium-width) or (max-height: $medium-height) {
+        background-position: 50% 45%;
+        background-size: 1000px;
+    }
 
     &__inner {
         align-items: center;
@@ -41,7 +46,9 @@
         }
     
         @media (max-width: $medium-width) or (max-height: $medium-height) {
+            background-size: 1000px;
             margin: 40px auto 100px;
+            max-width: 900px;
         }
 
         em {
@@ -63,6 +70,10 @@
                 position: relative;
                 top: 2px;
                 width: 34.99px;
+
+                @media (prefers-color-scheme: light) {
+                    background-image: url('../../../assets/hero-header/checkmark-light.svg');
+                }
             }
         }
     }
