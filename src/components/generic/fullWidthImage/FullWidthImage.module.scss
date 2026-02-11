@@ -1,0 +1,8 @@
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
+@use "global-stylesheets/GlobalVariables.scss" as *;
+
+.full-width-image {
+    @include global-slice-padding-x;
+    display: block;
+    margin: 0 auto;
+}

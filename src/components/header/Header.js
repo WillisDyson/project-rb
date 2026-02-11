@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 
-const Header = ({ className, variant, headerText, descText }) => {
+const Header = ({ className, variant, headerText, descriptionText }) => {
   return (
     <header
       className={`${className ? className : ""}${
@@ -8,7 +8,7 @@ const Header = ({ className, variant, headerText, descText }) => {
       }${variant ? styles[variant] : ""}`}
     >
       <h1>{headerText}</h1>
-      <p>{descText}</p>
+      <p>{descriptionText}</p>
     </header>
   );
 };

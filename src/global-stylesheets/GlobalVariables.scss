@@ -1,5 +1,23 @@
+@use "global-stylesheets/GlobalBreakpoints.scss" as *;
+
 // Border radius
 $global-border-radius: 15px;
 
 // Tiles
 $global-tile-gap: 25px;
+
+// Slice padding
+@mixin global-slice-padding-x {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@mixin global-slice-padding-y {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: $medium-width) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

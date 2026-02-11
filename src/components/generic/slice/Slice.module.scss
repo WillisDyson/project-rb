@@ -1,13 +1,11 @@
 @use "global-stylesheets/GlobalColours.scss" as *;
 @use "global-stylesheets/GlobalBreakpoints.scss" as *;
+@use "global-stylesheets/GlobalVariables.scss" as *;
 
 .slice {
+    @include global-slice-padding-x;
+    @include global-slice-padding-y;
     background-color: transparent;
-    padding: 80px 25px;
-
-    @media (max-width: $medium-width) {
-        padding: 50px 25px;
-    }
     
     &__inner {
         margin: 0 auto;

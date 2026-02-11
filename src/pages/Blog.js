@@ -6,7 +6,7 @@ const Blog = () => {
     <>
       <Header
         headerText={<>Web Accessibility Blog</>}
-        descText={
+        descriptionText={
           <>
             Web Accessibility is a evolving faster than ever – keep up to date by
             reading our articles.
