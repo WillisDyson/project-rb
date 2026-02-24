@@ -29,7 +29,8 @@ export const socialLinksData = {
 
 export const smallPrintData = {
   text: [
-      "© 2025 Rolling Block Ltd – Registered in England & Wales – All rights reserved.",
+      // "© 2025 Rolling Block Ltd – Registered in England & Wales – All rights reserved.",
+      "Not currently a registered company – this information is for demonstration purposes only.",
       "Company No. XXXXXXXX",
       "Registered Address: XX XXXXXX XXXXX, XXXXX, XXXX XXX",
       "VAT No. XXX XXXX XXX",
