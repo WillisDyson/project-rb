@@ -1,5 +1,5 @@
 import styles from "./HeroHeader.module.scss";
-import Logo from "components/generic/logo/Logo";
+// import Logo from "components/generic/logo/Logo";
 // import ButtonLink from "components/generic/button-link/ButtonLink";
 // import DownArrowImg from "assets/arrow-button/down-arrow-white.svg";
 // import { heroInfo } from "data/homepage/homepageData";
